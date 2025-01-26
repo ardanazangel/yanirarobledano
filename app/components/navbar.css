@@ -1,0 +1,39 @@
+nav {
+    padding: 3rem;
+    position: fixed;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 99999999999999999;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+a{
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.navbar-item{
+    font-size: 1.25rem;
+    font-family: 'Area';
+    font-weight: 400;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar-item-wrapper{
+    display: flex;
+    gap: 0.4rem;
+}

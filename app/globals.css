@@ -1,27 +1,26 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #0d0d0d;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Relais';
+  src: url("../public/fonts/RelaisDisplay-Regular.woff2") format("woff2");
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+  font-family: 'Relais Light';
+  src: url("../public/fonts/RelaisDisplay-Light.woff2") format("woff2");
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Relais Light Italic';
+  src: url("../public/fonts/RelaisDisplay-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Area';
+  src: url(../public/fonts/AreaNormal-Regular.woff2) format("woff2");
 }
 
 * {
@@ -30,13 +29,40 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body,html{
+  /*background-color: var(--background);*/
+  color: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p{
+  font-family: 'Area';
+  font-size: 1rem;
+  line-height: 1.3em;
 }
+
+h2{
+  font-family: 'Relais Light';
+  font-size: 10vw;
+  font-weight: 400;
+  line-height: 0.9em;
+  letter-spacing: -0.5vw;
+}
+
+h3{
+  font-family: 'Relais Light';
+  font-size: 3.3vw;
+  font-weight: 400;
+  line-height: 0.9em;
+  letter-spacing: -0.1vw;
+}
+
+.italic{
+  font-family: 'Relais Light Italic';
+}
+
+.total-wrapper{
+  padding: 0rem 3rem;
+}
+
+
+
