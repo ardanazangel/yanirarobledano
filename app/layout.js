@@ -2,10 +2,10 @@
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import "./globals.css";
-import Navbar from "../app/components/Navbar";
+import Navbar from "../app/components/Navbar.js";
 import { usePathname } from "next/navigation"; // Detectar cambios de ruta
 import Footer from "./components/Footer";
-import Grid from "./components/Grid";
+import Grid from "./components/Grid.js";
 
 export default function RootLayout({ children }) {
   const lenisRef = useRef(null); // Referencia de Lenis
