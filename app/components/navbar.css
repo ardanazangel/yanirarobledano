@@ -5,7 +5,7 @@ nav {
 
 .navbar {
     width: 100%;
-    z-index: 99999999999999999;
+    z-index: 100;
 }
 
 .navbar-list{
@@ -36,4 +36,15 @@ a{
 .navbar-item-wrapper{
     display: flex;
     gap: 0.4rem;
+}
+
+.underline {
+    height: 1.5px;
+    width: 0%;
+    background-color: #0d0d0d;
+    transition: all .6s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.navbar-link:hover .underline {
+    width: 100%;
 }

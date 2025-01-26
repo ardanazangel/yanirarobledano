@@ -23,21 +23,46 @@
   src: url(../public/fonts/AreaNormal-Regular.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: 'Area Bold';
+  src: url(../public/fonts/AreaNormal-Bold.woff2) format("woff2");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul,li {
+  list-style: none;
+}
+
 body,html{
   /*background-color: var(--background);*/
   color: var(--foreground);
+  overflow: hidden;
+}
+
+.big-spacer{
+  height: 15vh;
 }
 
 p{
   font-family: 'Area';
   font-size: 1rem;
-  line-height: 1.3em;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.bold{
+  font-family: 'Area Bold';
 }
 
 h2{
@@ -56,6 +81,13 @@ h3{
   letter-spacing: -0.1vw;
 }
 
+h4{
+  font-family: 'Area';
+  font-size: 1.75vw;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
 .italic{
   font-family: 'Relais Light Italic';
 }
@@ -63,6 +95,99 @@ h3{
 .total-wrapper{
   padding: 0rem 3rem;
 }
+
+#container{
+  opacity: 0;
+}
+
+.nav-buttons{
+  font-family: 'Area';
+  border: 0px;
+  background-color: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.project-link{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.split-smalls {
+  font-kerning: none;
+}
+
+.split-titles {
+  font-kerning: none;
+}
+
+.inner-project-info{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.inner-project-title{
+  font-family: 'Relais Light';
+  font-weight: 400;
+  text-align: center;
+  font-size: 10vw;
+  line-height: .9em;
+  letter-spacing: -0.5vw;
+}
+
+.inner-project-tags{
+  padding: 6rem 6rem 6rem 6rem;
+  width: 100%;
+  display: flex;
+
+}
+
+.inner-project-tag{
+  text-align: center;
+}
+
+.inner-project-tags-list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-tag-center{
+  position: absolute;
+  transform: translate(0%,-0%);
+}
+
+.big-image{
+  background-color: red;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.inner-project-description{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 6rem 0;
+}
+
+.credits{
+  width: 100%;
+}
+
+.credits-item{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+}
+
+
 
 
 

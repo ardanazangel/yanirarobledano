@@ -1,135 +1,91 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../components/ProjectSection.css";
+import TransitionLinkSecond from "./TransitionLinkSecond";
 
 export default function ProjectsSection() {
-  const [projectCount, setProjectCount] = useState(0); // Estado para guardar el número de proyectos
-
-  useEffect(() => {
-    // Contar los divs con clase "project-wrapper" después de que el DOM se haya renderizado
-    const count = document.querySelectorAll(".project-wrapper").length;
-    setProjectCount(count);
-  }, []); // El array vacío asegura que esto se ejecute solo una vez al montar el componente
+  // Datos dinámicos de los proyectos
+  const projects = [
+    {
+      title: "Suppies",
+      tags: ["Branding", "Packaging"],
+      imgUrl:
+        "https://images.unsplash.com/photo-1734000403582-da52e3699c0c?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "/project",
+    },
+    {
+      title: "Madamma Butterfly",
+      tags: ["UI/UX", "Web Design"],
+      imgUrl:
+        "https://images.unsplash.com/photo-1551334787-21e6bd3ab135?q=80&w=1886&auto=format&fit=crop",
+      link: "/madamma-butterfly",
+    },
+    {
+      title: "Consejito de la Yaya",
+      tags: ["Development", "Mobile App"],
+      imgUrl:
+        "https://images.unsplash.com/photo-1518779578993-ec3579fee39e?q=80&w=1886&auto=format&fit=crop",
+      link: "/project-three",
+    },
+    {
+      title: "Manuel Redondo",
+      tags: ["Marketing", "SEO"],
+      imgUrl:
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1886&auto=format&fit=crop",
+      link: "/project-four",
+    },
+    {
+      title: "Project Four",
+      tags: ["Marketing", "SEO"],
+      imgUrl:
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1886&auto=format&fit=crop",
+      link: "/project-four",
+    },
+    {
+      title: "Project Four",
+      tags: ["Marketing", "SEO"],
+      imgUrl:
+        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1886&auto=format&fit=crop",
+      link: "/project-four",
+    },
+  ];
 
   return (
-    <>
-      <section className="projects">
-        <div className="projects-title-wrapper">
-          <div className="projects-title">
-            <h2>Proyectos</h2>
-            <h2 className="italic">
-              ({String(projectCount).padStart(2, "0")})
-            </h2>
-          </div>
+    <section className="projects">
+      <div className="projects-title-wrapper">
+        <div className="projects-title">
+          <h2>Proyectos</h2>
+          <h2 className="italic">
+            ({String(projects.length).padStart(2, "0")})
+          </h2>
         </div>
-        <div className="projects-grid">
-
-          {/* Primer Proyecto */}  
-          <div className="project-wrapper">
-            <a className="project-link" href="/project">
+      </div>
+      <div className="projects-grid">
+        {/* Render dinámico de los proyectos */}
+        {projects.map((project, index) => (
+          <div className="project-wrapper" key={index}>
+            <TransitionLinkSecond href={project.link} />
               <div className="info-project">
                 <div className="project-title">
                   <div className="title-with-tags">
-                    <h3>Suppies</h3>
+                    <h3>{project.title}</h3>
                     <div className="tags-wrapper">
-                      <div className="tag">
-                        <p>Branding</p>
-                      </div>
-                      <div className="tag">
-                        <p>Packaging</p>
-                      </div>
+                      {project.tags.map((tag, idx) => (
+                        <div className="tag" key={idx}>
+                          <p>{tag}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
                   <h3 className="plus-icon">+</h3>
                 </div>
               </div>
               <div className="img project-img">
-                <img src="https://images.unsplash.com/photo-1734000403582-da52e3699c0c?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <img src={project.imgUrl} alt={project.title} />
               </div>
-            </a>
+            
           </div>
-
-          {/* Segundo Proyecto */} 
-
-          <div className="project-wrapper">
-            <a className="project-link" href="/project">
-              <div className="info-project">
-                <div className="project-title">
-                  <div className="title-with-tags">
-                    <h3>Suppies</h3>
-                    <div className="tags-wrapper">
-                      <div className="tag">
-                        <p>Branding</p>
-                      </div>
-                      <div className="tag">
-                        <p>Packaging</p>
-                      </div>
-                    </div>
-                  </div>
-                  <h3 className="plus-icon">+</h3>
-                </div>
-              </div>
-              <div className="img project-img">
-                <img src="https://images.unsplash.com/photo-1734000403582-da52e3699c0c?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-              </div>
-            </a>
-          </div>
-
-                    {/* Segundo Proyecto */} 
-           
-                    <div className="project-wrapper">
-            <a className="project-link" href="/project">
-              <div className="info-project">
-                <div className="project-title">
-                  <div className="title-with-tags">
-                    <h3>Suppies</h3>
-                    <div className="tags-wrapper">
-                      <div className="tag">
-                        <p>Branding</p>
-                      </div>
-                      <div className="tag">
-                        <p>Packaging</p>
-                      </div>
-                    </div>
-                  </div>
-                  <h3 className="plus-icon">+</h3>
-                </div>
-              </div>
-              <div className="img project-img">
-                <img src="https://images.unsplash.com/photo-1734000403582-da52e3699c0c?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-              </div>
-            </a>
-          </div>
-
-                    {/* Segundo Proyecto */} 
-           
-                    <div className="project-wrapper">
-            <a className="project-link" href="/project">
-              <div className="info-project">
-                <div className="project-title">
-                  <div className="title-with-tags">
-                    <h3>Suppies</h3>
-                    <div className="tags-wrapper">
-                      <div className="tag">
-                        <p>Branding</p>
-                      </div>
-                      <div className="tag">
-                        <p>Packaging</p>
-                      </div>
-                    </div>
-                  </div>
-                  <h3 className="plus-icon">+</h3>
-                </div>
-              </div>
-              <div className="img project-img">
-                <img src="https://images.unsplash.com/photo-1734000403582-da52e3699c0c?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-              </div>
-            </a>
-          </div>
-
-          {/* Terminan los proyectos */}  
-
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </section>
   );
 }

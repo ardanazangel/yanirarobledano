@@ -14,9 +14,9 @@ export default function AboutSection() {
 
     <section className="about">
       <div className="about-container">
-        <h2 className="about-content">
-          comunicar de manera <span className="italic">efectiva</span> a través
-          del diseño
+        <h2 className="about-content split-titles scroll-text-anim">
+          Comunicar de Manera <span className="italic">Efectiva</span> a Través
+          del Diseño
         </h2>
       </div>
     </section>

@@ -1,18 +1,26 @@
 "use client"; // Necesario para usar hooks en un componente del cliente
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import "./globals.css";
-import Navbar from "../app/components/navbar.js";
-import Grid from "../app/components/grid.js";
+import Navbar from "../app/components/Navbar";
+import { usePathname } from "next/navigation"; // Detectar cambios de ruta
+import Footer from "./components/Footer";
+import Grid from "./components/Grid";
 
 export default function RootLayout({ children }) {
+  const lenisRef = useRef(null); // Referencia de Lenis
+  const pathname = usePathname(); // Detectar ruta actual
+
   useEffect(() => {
-    // Inicializa Lenis
+    // Inicializa Lenis (scroll suave)
     const lenis = new Lenis({
-      smooth: true, // Activa el scroll suave
-      direction: "vertical", // Dirección del scroll
-      smoothTouch: true, // Habilita el scroll suave en dispositivos táctiles
+      smooth: true,
+      direction: "vertical",
+      smoothTouch: true,
+      touchMultiplier: 0.5,
     });
+
+    lenisRef.current = lenis;
 
     // Función de actualización de Lenis
     function raf(time) {
@@ -26,14 +34,24 @@ export default function RootLayout({ children }) {
     };
   }, []);
 
+  useEffect(() => {
+    // Cada vez que cambie la ruta, desactiva el scroll durante 500ms
+    if (lenisRef.current) {
+      lenisRef.current.stop(); // Detén el scroll
+      setTimeout(() => {
+        lenisRef.current.start(); // Reactiva el scroll después de 500 ms
+      }, 1500);
+    }
+  }, [pathname]); // Escucha los cambios en la ruta
+
   return (
     <html lang="en">
-      <body style={{ overflow: "hidden" }}>
-
+      <body>
+        {/*<Grid />*/}
         <Navbar />
-        {children}
+        <div>{children}</div>
+        <Footer />
       </body>
     </html>
   );
 }
-
