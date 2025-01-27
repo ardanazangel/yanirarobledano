@@ -5,7 +5,6 @@ import "./globals.css";
 import { usePathname } from "next/navigation"; // Detectar cambios de ruta
 import Navbar from "./components/Navbar"; // Ruta corregida
 import Footer from "./components/Footer"; // Verifica si Footer está en 'components'
-import Grid from "./components/Grid"; // Ruta corregida
 
 export default function RootLayout({ children }) {
   const lenisRef = useRef(null); // Referencia de Lenis
@@ -47,7 +46,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/*<Grid />*/}
         <Navbar />
         <div>{children}</div>
         <Footer />
