@@ -1,3 +1,5 @@
+'use client'
+
 import "../components/navbar.css";
 import TransitionLink from "./TransitionLink";
 
