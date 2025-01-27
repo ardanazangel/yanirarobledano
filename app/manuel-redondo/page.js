@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 
-
 import SplitType from "split-type";
 
 import { CustomEase } from "gsap/CustomEase";
@@ -54,9 +53,9 @@ export default function MadammaButterfly() {
     <div className="total-wrapper">
       <section className="inner-project-info">
         <h1 className="inner-project-title split-titles load-text-anim">
-          Madamma
+          V. de Manuel
           <br />
-          Butterfly
+          Redondo
         </h1>
         <div className="inner-project-tags">
           <ul className="inner-project-tags-list">
@@ -75,7 +74,7 @@ export default function MadammaButterfly() {
                 <p className="split-smalls load-text-anim-smalls">
                   <strong>Lugar</strong>
                 </p>
-                <p className="split-smalls load-text-anim-smalls">Pamplona</p>
+                <p className="split-smalls load-text-anim-smalls">Logroño</p>
               </div>
             </li>
             <li>
@@ -83,25 +82,22 @@ export default function MadammaButterfly() {
                 <p className="split-smalls load-text-anim-smalls">
                   <strong>Año</strong>
                 </p>
-                <p className="split-smalls load-text-anim-smalls">2022</p>
+                <p className="split-smalls load-text-anim-smalls">2024</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <section className="inner-project-first-image">
-        <img src="/" className="big-image" />
+        <img src="/imgs/manuel-redondo/textura.jpg" className="big-image" />
       </section>
       <section className="inner-project-description">
         <div className="credits">
           <ul>
             <li>
               <div className="credits-item">
-              <p className="bold">
-                Diseño
-
-              </p>
-              <p>
+                <p className="bold">Diseño</p>
+                <p>
                   <a href="https://www.instagram.com/robledano_/">
                     Yanira Robledano
                   </a>
@@ -110,8 +106,41 @@ export default function MadammaButterfly() {
             </li>
           </ul>
         </div>
-        <div className="inner-project-description-content"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis tortor ligula, a pharetra ante dapibus vel. Cras sit amet cursus ex. Aliquam pharetra odio a odio tempor, sed fringilla nunc feugiat. In hac habitasse platea dictumst. Vivamus tristique metus at purus pellentesque volutpat. Quisque imperdiet, risus vitae tempus sagittis, erat tellus ullamcorper sapien, a mollis ex ipsum quis felis. Praesent viverra velit mauris, vel pretium augue efficitur a. Aliquam quis felis erat. Curabitur ac scelerisque purus, quis porttitor elit.</h4></div>
+        <div className="inner-project-description-content">
+          <h4>
+            Legítimos Mazapanes Vda. de Manuel Redondo, con más de 150 años de
+            historia en Soto en Cameros, La Rioja, es sinónimo de tradición y
+            calidad artesanal. Su identidad visual fue rediseñada para
+            modernizar la marca, manteniendo su esencia histórica y conectando
+            con el consumidor actual. El nuevo diseño combina elegancia,
+            funcionalidad y sostenibilidad, utilizando materiales como la piel
+            de almendra y la cáscara de plátano para el packaging, reflejando un
+            compromiso con la artesanía y la economía circular.
+          </h4>
+        </div>
       </section>
+      <div className="inner-project-grid two-columns">
+        <div className="img">
+          <img src="/imgs/manuel-redondo/bolsa-mazapanes.webp"/>
+        </div>
+        <div className="img">
+          <img src="/imgs/manuel-redondo/dos-cajas.webp"/>
+        </div>
+      </div>
+      <div className="inner-project-grid one-columns">
+        <div className="img">
+          <img src="/imgs/manuel-redondo/haciendo-papel.webp" style={{filter:'brightness(1.1)'}}/>
+        </div>
+      </div>
+      <div className="inner-project-grid two-columns">
+        <div className="img">
+          <img src="/imgs/manuel-redondo/mazapanes.webp" style={{filter:'brightness(.9)'}}/>
+        </div>
+        <div className="img">
+          <img src="/imgs/manuel-redondo/mazapanes-cerca.webp"/>
+        </div>
+      </div>
+
     </div>
   );
 }

@@ -30,8 +30,8 @@ export default function ProjectsSection() {
       title: "Manuel Redondo",
       tags: ["Marketing", "SEO"],
       imgUrl:
-        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1886&auto=format&fit=crop",
-      link: "/project-four",
+        "/imgs/manuel-redondo/logo.png",
+      link: "/manuel-redondo",
     },
     {
       title: "Project Four",
