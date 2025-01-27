@@ -3,8 +3,9 @@ import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import "./globals.css";
 import { usePathname } from "next/navigation"; // Detectar cambios de ruta
-import Navbar from "./components/Navbar"; // Ruta corregida
-import Footer from "./components/Footer"; // Verifica si Footer está en 'components'
+import Footer from "./components/Footer"; // Verifica si Footer está en 
+// 'components'
+import Header from "./components/Header";
 
 export default function RootLayout({ children }) {
   const lenisRef = useRef(null); // Referencia de Lenis
@@ -46,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Header />
         <div>{children}</div>
         <Footer />
       </body>

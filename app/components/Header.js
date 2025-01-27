@@ -1,7 +1,7 @@
 import "../components/navbar.css";
 import TransitionLink from "./TransitionLink";
 
-export default function Navbar() {
+export default function Header() {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
