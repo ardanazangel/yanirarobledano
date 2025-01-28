@@ -1,3 +1,46 @@
 .footer-wrapper{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    padding: 0rem 3rem;
 }
+
+.footer-banner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-relevant{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.search-intership-wrapper{
+    position: absolute;
+    bottom: 0;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.internship-tracker{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0.25rem 0rem;
+    width: 200vw;
+    transform: translate(15%);
+}
+
+.internship-tracker p{
+    text-wrap: none;
+
+}
+

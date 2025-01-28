@@ -53,7 +53,7 @@ export default function MadammaButterfly() {
     <div className="total-wrapper">
       <section className="inner-project-info">
         <h1 className="inner-project-title split-titles load-text-anim">
-          V. de Manuel
+          Vda. de Manuel
           <br />
           Redondo
         </h1>
@@ -129,7 +129,7 @@ export default function MadammaButterfly() {
       </div>
       <div className="inner-project-grid one-columns">
         <div className="img">
-          <img src="/imgs/manuel-redondo/haciendo-papel.webp" style={{filter:'brightness(1.1)'}}/>
+          <img src="/imgs/manuel-redondo/foto-papel.jpg" style={{filter:'brightness(1.1)'}}/>
         </div>
       </div>
       <div className="inner-project-grid two-columns">

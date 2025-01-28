@@ -21,14 +21,14 @@ export default function ProjectsSection() {
     },
     {
       title: "Consejito de la Yaya",
-      tags: ["Development", "Mobile App"],
+      tags: ["Branding", "Publicidad", "Redes Sociales"],
       imgUrl:
-        "https://images.unsplash.com/photo-1518779578993-ec3579fee39e?q=80&w=1886&auto=format&fit=crop",
-      link: "/project-three",
+        "/imgs/consejito-de-la-yaya/foto_mupi.jpg",
+      link: "/consejito-de-la-yaya",
     },
     {
-      title: "Manuel Redondo",
-      tags: ["Marketing", "SEO"],
+      title: "Vda. de Manuel Redondo",
+      tags: ["Packaging", "Diseño"],
       imgUrl:
         "/imgs/manuel-redondo/logo.png",
       link: "/manuel-redondo",
