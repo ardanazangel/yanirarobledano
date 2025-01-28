@@ -94,3 +94,17 @@
     align-items: center;
     
   }
+
+  @media  (max-width: 900px) {
+    .projects-grid{
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .projects-title{
+      padding: 3rem 0rem;
+    }
+
+    .info-project{
+      display: none;
+    }
+}

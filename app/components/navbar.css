@@ -48,3 +48,13 @@ a{
 .navbar-link:hover .underline {
     width: 100%;
 }
+
+@media  (max-width: 750px) {
+    nav{
+        padding: 1.5rem;
+    }
+
+    .center{
+        display: none;
+    }
+}
