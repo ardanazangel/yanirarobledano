@@ -14,6 +14,7 @@ export default function LayoutClient({ children }) {
       direction: "vertical",
       smoothTouch: true,
       touchMultiplier: 0.5,
+      duration:2,
     });
 
     lenisRef.current = lenis;
@@ -36,7 +37,7 @@ export default function LayoutClient({ children }) {
       lenisRef.current.stop(); // Detén el scroll
       setTimeout(() => {
         lenisRef.current.start(); // Reactiva el scroll después de 500 ms
-      }, 1500);
+      }, 2000);
     }
   }, [pathname]); // Escucha los cambios en la ruta
 

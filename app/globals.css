@@ -3,6 +3,20 @@
   --foreground: #0d0d0d;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Para Internet Explorer y Edge antiguo */
+body {
+  -ms-overflow-style: none;
+}
+
 @font-face {
   font-family: "Relais";
   src: url("../public/fonts/RelaisDisplay-Regular.woff2") format("woff2");
@@ -58,6 +72,10 @@ body,
 html {
   /*background-color: var(--background);*/
   color: var(--foreground);
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--background);
+  
 }
 
 .big-spacer {
@@ -66,7 +84,7 @@ html {
 
 p {
   font-family: "Area";
-  font-size: 1rem;
+  font-size: clamp(0.813rem, 0.765rem + 0.196vw, 1rem);
   line-height: 1.4em;
   font-weight: 400;
 }
@@ -84,7 +102,7 @@ p {
 
 h2 {
   font-family: "Relais Light";
-  font-size: 10vw;
+  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
   font-weight: 400;
   line-height: 0.9em;
   letter-spacing: -0.5vw;
@@ -100,7 +118,7 @@ h3 {
 
 h4 {
   font-family: "Area";
-  font-size: 1.5rem;
+  font-size:clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);
   line-height: 1.4em;
   font-weight: 400;
   text-wrap: balance;
@@ -111,7 +129,8 @@ h4 {
 }
 
 .total-wrapper {
-  padding: 0rem 3rem;
+  padding-left: clamp(1rem, 0.49rem + 2.092vw, 3rem);
+  padding-right: clamp(1rem, 0.49rem + 2.092vw, 3rem);
 }
 
 #container {
@@ -122,7 +141,7 @@ h4 {
   font-family: "Area";
   border: 0px;
   background-color: transparent;
-  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);
   cursor: pointer;
 }
 
@@ -154,13 +173,13 @@ h4 {
   font-family: "Relais Light";
   font-weight: 400;
   text-align: center;
-  font-size: 10vw;
+  font-size: clamp(2.75rem, 0.392rem + 9.673vw, 12rem);
   line-height: 0.9em;
   letter-spacing: -0.5vw;
 }
 
 .inner-project-tags {
-  padding: 6rem 6rem 6rem 6rem;
+  padding: clamp(1.5rem, 0.353rem + 4.706vw, 6rem);
   width: 100%;
   display: flex;
 }
@@ -178,7 +197,6 @@ h4 {
 
 
 .big-image {
-  background-color: red;
   width: 100%;
   aspect-ratio: 16/9;
 }
@@ -186,8 +204,10 @@ h4 {
 .inner-project-description {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding: 3rem 0rem 9rem 0rem;
+  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+  padding-top:clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
+  padding-bottom:clamp(3rem, 2.235rem + 3.137vw, 6rem);
+
 }
 
 .credits {
@@ -198,25 +218,25 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-right: 3rem;
+  margin-right: clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
 }
 
 .inner-project-grid {
   display: grid;
   width: 100%;
-  padding: 0rem 0rem 1.5rem 0rem;
+  padding-bottom: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
 }
 
 .one-columns {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
+  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
 }
 
 .two-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
 }
 
 .one-columns img {
@@ -227,13 +247,20 @@ h4 {
   aspect-ratio: 3/4;
 }
 
-@media (max-width: 900px) {
-  .total-wrapper {
-    padding: 0rem 1.5rem;
+
+@media (max-width: 1250px) {
+  .inner-project-info {
+    min-height: 70vh;
   }
+}
+
+
+@media (max-width: 900px) {
+
 
   .inner-project-info {
-    min-height: 80vh;
+    min-height: 60vh;
+    gap: clamp(2rem, 1.745rem + 1.046vw, 3rem);
   }
 
   .inner-project-description {
@@ -241,42 +268,35 @@ h4 {
   }
 
   .big-image {
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/4;
   }
 
   .one-columns img {
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/4;
   }
   .two-columns {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
   }
-  h4{
-    font-size: 1.25rem;
+  .project-list-item{
+    width: 100%;
   }
+
+  #year{
+    position: relative;
+    transform: translate(0,0);
+  }
+
+
 }
 
 @media (max-width: 750px) {
-  .total-wrapper {
-    padding: 0rem 1.5rem;
-  }
 
   .inner-project-info {
-    min-height: 60vh;
+    min-height: 50vh;
   }
 
-  h2 {
-    font-size: 14vw;
-    font-weight: 400;
-    letter-spacing: -0.5vw;
-  }
-
-  .inner-project-title {
-    font-size: 14vw;
-  }
-
-  .inner-project-tags {
-    padding: 3rem 1.5rem;
+  .about{
+    min-height: 50vh;
   }
 }

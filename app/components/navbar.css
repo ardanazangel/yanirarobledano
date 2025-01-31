@@ -1,5 +1,5 @@
 nav {
-    padding: 3rem;
+    padding: clamp(1rem, 0.49rem + 2.092vw, 3rem);
     position: fixed;
 }
 
@@ -21,7 +21,7 @@ a{
 }
 
 .navbar-item{
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);
     font-family: 'Area';
     font-weight: 400;
 }
@@ -50,9 +50,6 @@ a{
 }
 
 @media  (max-width: 750px) {
-    nav{
-        padding: 1.5rem;
-    }
 
     .center{
         display: none;

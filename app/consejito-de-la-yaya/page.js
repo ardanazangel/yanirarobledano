@@ -5,7 +5,12 @@ import { gsap } from "gsap";
 
 import SplitType from "split-type";
 
+import Image from "next/image";
+
 import { CustomEase } from "gsap/CustomEase";
+import BackgroundVideo from "@/app/components/BackgroundVideo"
+
+
 
 // Registrar el plugin de GSAP
 gsap.registerPlugin(CustomEase);
@@ -59,7 +64,7 @@ export default function MadammaButterfly() {
         </h1>
         <div className="inner-project-tags">
           <ul className="inner-project-tags-list">
-            <li>
+            <li className="project-list-item">
               <div id="client" className="inner-project-tag inner-tag-center">
                 <p className="split-smalls load-text-anim-smalls">
                   <strong>Cliente</strong>
@@ -69,7 +74,7 @@ export default function MadammaButterfly() {
                 </p>
               </div>
             </li>
-            <li>
+            <li className="project-list-item">
               <div id="year" className="inner-project-tag">
                 <p className="split-smalls load-text-anim-smalls">
                   <strong>Lugar</strong>
@@ -77,7 +82,7 @@ export default function MadammaButterfly() {
                 <p className="split-smalls load-text-anim-smalls">Pamplona</p>
               </div>
             </li>
-            <li>
+            <li className="project-list-item">
               <div id="zone" className="inner-project-tag">
                 <p className="split-smalls load-text-anim-smalls">
                   <strong>Año</strong>
@@ -89,7 +94,14 @@ export default function MadammaButterfly() {
         </div>
       </section>
       <section className="inner-project-first-image">
-        <img src="/imgs/consejito-de-la-yaya/posters.png" className="big-image" />
+        <Image 
+        src="/imgs/consejito-de-la-yaya/posters.png" 
+        className="big-image" 
+        width={1920}
+        height={1080}
+        alt="imagen de banner de proyecto"
+
+        />
       </section>
       <section className="inner-project-description">
         <div className="credits">
@@ -97,11 +109,9 @@ export default function MadammaButterfly() {
             <li>
               <div className="credits-item">
                 <p className="bold">Diseño</p>
-                <p>
-                  <a href="https://www.instagram.com/robledano_/">
-                    Yanira Robledano
+                  <a href="https://www.instagram.com/robledano_/" style={{padding:'0.25rem 0rem', opacity:'.4'}}>
+                    <h4>Yanira Robledano</h4>
                   </a>
-                </p>
                 
               </div>
             </li>
@@ -109,7 +119,7 @@ export default function MadammaButterfly() {
         </div>
         <div className="inner-project-description-content">
           <h4>
-            Este proyecto está dirigido a la Generación Z y a la denominada
+            Esta campaña de concienciación está dirigida a la Generación Z y a la denominada
             "Generación de Cristal", dos grupos influenciados por la
             digitalización, que ha transformado sus hábitos de comunicación y
             sus formas de relacionarse. <br />
@@ -126,14 +136,15 @@ export default function MadammaButterfly() {
       </section>
       <div className="inner-project-grid two-columns">
         <div className="img">
-        <video autoPlay loop muted playsInline className="video">
-            <source src="/imgs/consejito-de-la-yaya/reel-mensajes.mp4" type="video/mp4"/>
-            {/* Fallback para navegadores que no soportan videos */}
-            Tu navegador no soporta videos.
-          </video>
+        <BackgroundVideo videoId="1052445975" />;
         </div>
         <div className="img">
-          <img src="/imgs/consejito-de-la-yaya/movil3.jpg" />
+          <Image 
+          src="/imgs/consejito-de-la-yaya/movil3.jpg" 
+          width={1280}
+          height={1920}
+          alt="mockup movil auriculares"
+          />
         </div>
       </div>
       <div className="inner-project-grid one-columns">
@@ -145,19 +156,11 @@ export default function MadammaButterfly() {
         </div>
       </div>
       <div className="inner-project-grid two-columns">
-        <div className="img">
-          <video autoPlay loop muted playsInline className="video">
-            <source src="/imgs/consejito-de-la-yaya/reel-carteles-comprimido.mp4" type="video/mp4"/>
-            {/* Fallback para navegadores que no soportan videos */}
-            Tu navegador no soporta videos.
-          </video>
+        <div className="img" style={{aspectRatio:'3/4'}}>
+        <BackgroundVideo videoId="1052444968" />;
         </div>
-        <div className="img">
-        <video autoPlay loop muted playsInline className="video">
-            <source src="/imgs/consejito-de-la-yaya/reel-recuerdos.mp4" type="video/mp4"/>
-            {/* Fallback para navegadores que no soportan videos */}
-            Tu navegador no soporta videos.
-          </video>
+        <div className="img" style={{position:'relative', aspectRatio:'3/4'}}>
+        <BackgroundVideo videoId="1052449122" />;
         </div>
       </div>
     </div>

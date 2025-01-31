@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "../utils/transitionAnim"
+import Link from "next/link"
 
 const TransitionLinkSecond = ({href}) => {
     const router = useRouter()

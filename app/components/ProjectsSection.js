@@ -1,6 +1,15 @@
+"use client"; 
+
+
 import React from "react";
 import "../components/ProjectSection.css";
 import TransitionLinkSecond from "./TransitionLinkSecond";
+import { useEffect } from "react";
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function ProjectsSection() {
   // Datos dinámicos de los proyectos
@@ -48,6 +57,19 @@ export default function ProjectsSection() {
       link: "/project-four",
     },
   ];
+
+  useEffect(()=>{
+    gsap.to(".projects-title", {
+      width: "100%",
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".projects",
+        start: "top 110%",
+        end: "top 10%",
+        scrub: true,
+      },
+    });
+  },[])
 
   return (
     <section className="projects">

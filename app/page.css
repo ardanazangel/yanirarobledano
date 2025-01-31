@@ -8,7 +8,7 @@
 
 .title-hero {
     font-family: 'Relais';
-    font-size: 15vw;
+    font-size: clamp(5rem, 1.654rem + 13.725vw, 18.125rem);
     font-weight: 400;
     line-height: 0.8em;
     text-align: center;
@@ -24,11 +24,11 @@
   }
   .hero-info{
     display: flex;
-    gap: 1.5rem;
+    gap: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
     width: 100%;
     justify-content: space-between;
     align-items: end;
-    padding: 3rem;
+    padding: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
     position: absolute;
     bottom: 0;
   }
@@ -46,11 +46,15 @@
 
   .img-hero{
     position: absolute;
-    width: 20vw;
+    width: clamp(12.5rem, 9.951rem + 10.458vw, 22.5rem);
     background-color: blue;
     aspect-ratio: 3/4;
     rotate: 0deg;
     top: 100%;
+  }
+
+  .split-titles .char, .split-smalls .word {
+    position: relative;
   }
 
   .about {
@@ -61,7 +65,7 @@
 .about-container{
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* Define 6 columnas iguales */
-  gap: 1.5rem;
+  gap: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
 
 }
 
@@ -88,3 +92,20 @@
   scale: 1.25;
 }
 
+@media (max-width: 750px) {
+
+  .about-container{
+    grid-template-columns: repeat(6, 1fr); /* Define 6 columnas iguales */
+    grid-column: 1; /* Ocupa desde la columna 2 hasta la columna 4 */
+
+
+  }
+
+  .about-content{
+    grid-column: 1 / 7; /* Ocupa desde la columna 2 hasta la columna 4 */
+    
+  }
+  .about{
+    min-height: 50vh;
+  }
+}

@@ -21,7 +21,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <LayoutClient>{children}</LayoutClient>
+        <LayoutClient>
+          
+          {children}
+          </LayoutClient>
         <Footer />
       </body>
     </html>

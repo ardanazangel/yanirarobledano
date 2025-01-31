@@ -1,9 +1,42 @@
+'use client'
+
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 export default function ImageSection() {
+    useEffect(()=>{
+            gsap.fromTo(
+              ".img-banner",
+              { y: "-25%" }, // Estado inicial
+              {
+                y: "25%", // Animación hacia la posición final
+                scrollTrigger: {
+                  trigger: ".banner-image", // Activa la animación por cada elemento
+                  start: "top 100%", // Cuando el elemento entra al 80% del viewport
+                  end: "bottom 0%", // Finaliza cerca del centro
+                  scrub: true, // Sin scrub, la animación ocurre una vez
+                  markers:true,
+                },
+              }
+            );
+    })
     return(
         <>
             <div className="banner-image">
                 <div className="img">
-                    <img className="img-banner" src="https://images.unsplash.com/photo-1734000403582-da52e3699c0c?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                    <Image className="img-banner" 
+                    src="/imgs/consejito-de-la-yaya/foto_mupi.jpg" 
+                    width={2560}
+                    height={1920}
+
+                    />
+                    
                 </div>
             </div>
         </>
