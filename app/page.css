@@ -142,6 +142,10 @@
     overflow: hidden;
   }
 
+  .hero-img-container{
+    z-index: 0;
+  }
+
   .img-hero{
     top: 50%;
     transform: translateY(-50%);
