@@ -21,7 +21,6 @@ export default function ImageSection() {
                   start: "top 100%", // Cuando el elemento entra al 80% del viewport
                   end: "bottom 0%", // Finaliza cerca del centro
                   scrub: true, // Sin scrub, la animación ocurre una vez
-                  markers:true,
                 },
               }
             );

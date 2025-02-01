@@ -21,7 +21,6 @@ gsap.registerPlugin(ScrollTrigger);
 
     const character = document.getElementsByClassName(".scroll-text")
 
-    console.log(titles.chars)
 
     gsap.fromTo(
       ".scroll-text  .char",

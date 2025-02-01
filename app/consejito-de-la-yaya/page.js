@@ -73,6 +73,7 @@ export default function MadammaButterfly() {
                   Proyecto Final
                 </p>
               </div>
+              
             </li>
             <li className="project-list-item">
               <div id="year" className="inner-project-tag">
@@ -111,6 +112,16 @@ export default function MadammaButterfly() {
                 <p className="bold">Diseño</p>
                   <a href="https://www.instagram.com/robledano_/" style={{padding:'0.25rem 0rem', opacity:'.4'}}>
                     <h4>Yanira Robledano</h4>
+                  </a>
+                
+              </div>
+              <div className="credits-item">
+                <p className="bold"><br/>Tutorizado</p>
+                  <a href="https://www.instagram.com/robledano_/" style={{paddingTop:'0.25rem', opacity:'.4'}}>
+                    <h4>Oier</h4>
+                  </a>
+                  <a href="https://www.instagram.com/robledano_/" style={{ opacity:'.4'}}>
+                    <h4>Nerea Simón</h4>
                   </a>
                 
               </div>
