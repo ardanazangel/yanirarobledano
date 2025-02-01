@@ -57,7 +57,6 @@ export default function Hero() {
       }
     );
 
-
     gsap.to(".img-hero", {
       top: "70vh",
       rotate: "-20deg",

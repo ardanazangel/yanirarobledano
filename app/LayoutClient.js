@@ -37,7 +37,7 @@ export default function LayoutClient({ children }) {
       lenisRef.current.stop(); // Detén el scroll
       setTimeout(() => {
         lenisRef.current.start(); // Reactiva el scroll después de 500 ms
-      }, 2000);
+      }, 0);
     }
   }, [pathname]); // Escucha los cambios en la ruta
 
