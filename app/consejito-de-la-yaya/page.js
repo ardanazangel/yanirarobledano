@@ -8,9 +8,7 @@ import SplitType from "split-type";
 import Image from "next/image";
 
 import { CustomEase } from "gsap/CustomEase";
-import BackgroundVideo from "@/app/components/BackgroundVideo"
-
-
+import BackgroundVideo from "@/app/components/BackgroundVideo";
 
 // Registrar el plugin de GSAP
 gsap.registerPlugin(CustomEase);
@@ -18,7 +16,7 @@ gsap.registerPlugin(CustomEase);
 // Crear el easing personalizado
 CustomEase.create("InOutQuart", "0.770, 0.000, 0.175, 1.000");
 
-export default function MadammaButterfly() {
+export default function ProjectPage() {
   useEffect(() => {
     const titles = new SplitType(".split-titles");
     const smallWords = new SplitType(".split-smalls");
@@ -73,7 +71,6 @@ export default function MadammaButterfly() {
                   Proyecto Final
                 </p>
               </div>
-              
             </li>
             <li className="project-list-item">
               <div id="year" className="inner-project-tag">
@@ -96,12 +93,12 @@ export default function MadammaButterfly() {
       </section>
       <section className="inner-project-first-image">
         <Image 
-        src="/imgs/consejito-de-la-yaya/posters.png" 
-        className="big-image" 
-        width={1920}
-        height={1080}
-        alt="imagen de banner de proyecto"
-
+          src="/imgs/consejito-de-la-yaya/posters.png" 
+          className="big-image" 
+          width={1920}
+          height={1080}
+          alt="Carteles de la campaña Consejito de la Yaya"
+          priority
         />
       </section>
       <section className="inner-project-description">
@@ -110,68 +107,59 @@ export default function MadammaButterfly() {
             <li>
               <div className="credits-item">
                 <p className="bold">Diseño</p>
-                  <a href="https://www.instagram.com/robledano_/" style={{padding:'0.25rem 0rem', opacity:'.4'}}>
-                    <h4>Yanira Robledano</h4>
-                  </a>
-                
+                <a href="https://www.instagram.com/robledano_/" style={{ padding: '0.25rem 0rem', opacity: '.4' }}>
+                  <h4>Yanira Robledano</h4>
+                </a>
               </div>
               <div className="credits-item">
-                <p className="bold"><br/>Tutorizado</p>
-                  <a href="https://www.instagram.com/robledano_/" style={{paddingTop:'0.25rem', opacity:'.4'}}>
-                    <h4>Oier</h4>
-                  </a>
-                  <a href="https://www.instagram.com/robledano_/" style={{ opacity:'.4'}}>
-                    <h4>Nerea Simón</h4>
-                  </a>
-                
+                <p className="bold"><br />Tutorizado</p>
+                <a href="#" style={{ paddingTop: '0.25rem', opacity: '.4' }}>
+                  <h4>Oier</h4>
+                </a>
+                <a href="#" style={{ opacity: '.4' }}>
+                  <h4>Nerea Simón</h4>
+                </a>
               </div>
             </li>
           </ul>
         </div>
         <div className="inner-project-description-content">
           <h4>
-            Esta campaña de concienciación está dirigida a la Generación Z y a la denominada
-            "Generación de Cristal", dos grupos influenciados por la
-            digitalización, que ha transformado sus hábitos de comunicación y
-            sus formas de relacionarse. <br />
-            La campaña se articula en torno al claim “Consejito de la Yaya”, un
-            concepto que utiliza la figura entrañable de una abuela como símbolo
-            de confianza, tradición y sabiduría. Con un tono irónico, reflexivo
-            y juvenil, la abuela ofrece consejos a los jóvenes desde una
-            perspectiva cercana, conectando emocionalmente con el público
-            objetivo. Esta propuesta no solo busca generar conciencia sobre los
-            retos de la era digital, sino también invitar a estos jóvenes a la
-            reflexión mediante un enfoque creativo que combina humor y valores.
+          Esta campaña de concienciación está dirigida a la Generación Z y a la denominada "Generación de Cristal", dos grupos influenciados por la digitalización, que ha transformado sus hábitos de comunicación y sus formas de relacionarse.
+          La campaña se articula en torno al claim “Consejito de la Yaya”, un concepto que utiliza la figura entrañable de una abuela como símbolo de confianza, tradición y sabiduría. Con un tono irónico, reflexivo y juvenil, la abuela ofrece consejos a los jóvenes desde una perspectiva cercana, conectando emocionalmente con el público objetivo. Esta propuesta no solo busca generar conciencia sobre los retos de la era digital, sino también invitar a estos jóvenes a la reflexión mediante un enfoque creativo que combina humor y valores.
           </h4>
         </div>
       </section>
       <div className="inner-project-grid two-columns">
         <div className="img">
-        <BackgroundVideo videoId="1052445975" />;
+          <BackgroundVideo videoId="1052445975" />
         </div>
         <div className="img">
           <Image 
-          src="/imgs/consejito-de-la-yaya/movil3.jpg" 
-          width={1280}
-          height={1920}
-          alt="mockup movil auriculares"
+            src="/imgs/consejito-de-la-yaya/movil3.jpg" 
+            width={1280}
+            height={1920}
+            alt="Mockup de un móvil mostrando la campaña Consejito de la Yaya"
           />
         </div>
       </div>
       <div className="inner-project-grid one-columns">
         <div className="img">
-          <img
-            src="/imgs/consejito-de-la-yaya/foto_mupi.jpg"
+          <Image 
+            src="/imgs/consejito-de-la-yaya/foto_mupi.jpg" 
             style={{ filter: "brightness(1.1)" }}
+            width={1280}
+            height={1920}
+            alt="Mupi publicitario con diseño de la campaña Consejito de la Yaya"
           />
         </div>
       </div>
       <div className="inner-project-grid two-columns">
-        <div className="img" style={{aspectRatio:'3/4'}}>
-        <BackgroundVideo videoId="1052444968" />;
+        <div className="img" style={{ aspectRatio: '3/4' }}>
+          <BackgroundVideo videoId="1052444968" />
         </div>
-        <div className="img" style={{position:'relative', aspectRatio:'3/4'}}>
-        <BackgroundVideo videoId="1052449122" />;
+        <div className="img" style={{ position: 'relative', aspectRatio: '3/4' }}>
+          <BackgroundVideo videoId="1052449122" />
         </div>
       </div>
     </div>

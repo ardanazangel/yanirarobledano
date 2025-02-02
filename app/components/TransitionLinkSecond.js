@@ -15,7 +15,7 @@ const TransitionLinkSecond = ({href}) => {
     }
 
     return(
-        <Link onClick={handleClick} className="project-link" href={'/'}>
+        <Link onClick={handleClick} className="project-link" href={href}>
 
         </Link>
     )

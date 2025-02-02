@@ -13,9 +13,9 @@ export default function ImageSection() {
     useEffect(()=>{
             gsap.fromTo(
               ".img-banner",
-              { y: "-25%" }, // Estado inicial
+              { y: "-15%" }, // Estado inicial
               {
-                y: "25%", // Animación hacia la posición final
+                y: "15%", // Animación hacia la posición final
                 scrollTrigger: {
                   trigger: ".banner-image", // Activa la animación por cada elemento
                   start: "top 100%", // Cuando el elemento entra al 80% del viewport

@@ -76,7 +76,6 @@
 
 .banner-image{
   height: 100vh;
-  background-color: red;
   margin-left: -3rem;
   margin-right: -3rem;
   overflow: hidden;
@@ -116,7 +115,8 @@
     
   }
   .about{
-    min-height: 50vh;
+    min-height: auto;
+    padding: 15vh 0 20vh 0;
   }
 
   .hero{
@@ -158,6 +158,11 @@
   .title-hero-span {
     transform: translateX(0%);
     animation: moveLoop 20s linear infinite;
+  }
+
+  .banner-image{
+    height: 60vh;
+    
   }
   
   @keyframes moveLoop {

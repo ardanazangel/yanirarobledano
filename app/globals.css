@@ -173,14 +173,15 @@ h4 {
   font-family: "Relais Light";
   font-weight: 400;
   text-align: center;
-  font-size: clamp(2.75rem, 0.392rem + 9.673vw, 12rem);
+  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
+
   line-height: 0.9em;
   letter-spacing: -0.5vw;
 }
 
 .inner-project-tags {
   padding: clamp(1.5rem, 0.353rem + 4.706vw, 6rem);
-  width: 100%;
+  width: 75%;
   display: flex;
 }
 
