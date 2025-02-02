@@ -6,6 +6,8 @@ nav {
 .navbar {
     width: 100%;
     z-index: 100;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .navbar-list{
@@ -55,3 +57,8 @@ a{
         display: none;
     }
 }
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+  }
