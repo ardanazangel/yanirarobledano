@@ -67,7 +67,7 @@ export default function ProjectPage() {
                   <strong>Cliente</strong>
                 </p>
                 <p className="split-smalls load-text-anim-smalls">
-                  Proyecto Académico
+                  Académico
                 </p>
               </div>
             </li>

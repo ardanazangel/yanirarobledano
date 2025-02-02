@@ -54,7 +54,9 @@ export default function Hero() {
     mm.add("(min-width: 751px)", () => {
       let tl = gsap.timeline();
 
-      tl.to(".img-hero", {
+      gsap.fromTo(".img-hero",{
+        rotate:'0deg'
+      }, {
         top: "70vh",
         rotate: "-20deg",
         ease: "InOutQuart",
@@ -64,17 +66,17 @@ export default function Hero() {
 
       tl.fromTo(
         ".img-hero",
-        { opacity: 1, y: "0%" },
+        { opacity: 1, y: "0%", rotate:'-20deg' },
         {
-          y: "-20%",
+          y: "-50%",
           opacity: 1,
           duration: 1.5,
-          rotate: -40,
+          rotate: '-65deg',
           delay: 1.5,
           scrollTrigger: {
-            trigger: ".hero",
+            trigger: ".total-wrapper",
             start: "top top",
-            end: "bottom top",
+            end: "bottom bottom",
             scrub: true,
           },
         }

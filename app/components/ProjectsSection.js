@@ -101,13 +101,16 @@ export default function ProjectsSection() {
                   <h3 className="plus-icon">+</h3>
                 </div>
               </div>
+
               <div className="img project-img">
                 <img src={project.imgUrl} alt={project.title} />
               </div>
             
           </div>
+
         ))}
       </div>
+
     </section>
   );
 }
