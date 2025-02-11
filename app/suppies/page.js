@@ -123,7 +123,7 @@ export default function ProjectPage() {
           </h4>
           <p style={{ width: "100%" }}>
             <br />
-            La marca destaca por su compromiso con una alimentación infantil saludable, reflejando valores como la naturalidad y la confianza. El diseño utiliza tonos suaves y orgánicos, alineados con las preferencias de padres que buscan productos naturales y seguros para sus hijos.
+            La marca destaca por su compromiso con una alimentación infantil saludable, reflejando valores como la naturalidad y la confianza. El diseño utiliza tonos suaves y orgánicos, alineados con las preferencias de padres que buscan productos naturales y seguros para sus hijos.  
           </p>
         </div>
       </section>

@@ -139,7 +139,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid two-columns">
         <div className="img">
         <Image
-          src="/imgs/madamma-butterfly/bote_matcha.jpg"
+          src="/imgs/madamma-butterfly/BOTE_matcha.jpg"
           className="big-image"
           style={{filter:'brightness(.95)'}}
           width={1920}
@@ -174,7 +174,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid two-columns">
         <div className="img" style={{ aspectRatio: "3/4" }}>
         <Image
-          src="/imgs/madamma-butterfly/vela.jpg"
+          src="/imgs/madamma-butterfly/VELO.jpg"
           className="big-image"
           width={1920}
           height={1080}
