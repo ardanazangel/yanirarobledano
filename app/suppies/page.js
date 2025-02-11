@@ -91,7 +91,7 @@ export default function ProjectPage() {
       </section>
       <section className="inner-project-first-image">
         <Image
-          src="/imgs/suppies/botes-detalle.jpg"
+          src="/imgs/suppies/botes-lejos.jpg"
           className="big-image"
           width={1920}
           height={1080}
