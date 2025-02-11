@@ -5,7 +5,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import '@/app/page.css'
+import { CustomEase } from "gsap/all";
 
+CustomEase.create("InOutQuart", "0.770, 0.000, 0.175, 1.000");
 
 export default function AboutSection() {
   useEffect(() => {
@@ -23,21 +25,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 
     gsap.fromTo(
-      ".scroll-text  .char",
+      ".scroll-text .line ",
       {
-        y: "50%",
+        y: "100%",
         opacity: 0,
       },
       {
         y: "0%",
         opacity: 1,
         stagger: 0.1,
-        duration: 1.5,
+        duration:1  ,
+        ease:'power3.inOut',
         scrollTrigger: {
-          trigger: ".scroll-text",
-          start: "top 90%",
-          end: "bottom 60%",
-          scrub: true,
+          trigger: ".about-container",
+          start: "top 75%",
+          scrub: false,
         },
       }
     );

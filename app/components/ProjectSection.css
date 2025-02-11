@@ -101,7 +101,7 @@
     }
 
     .projects-title{
-      padding: 3rem 0rem 1.5rem 0;
+      padding: 3rem 0rem 2rem 0;
     }
 
     .info-project{
@@ -129,6 +129,8 @@
 
     .project-wrapper{
       aspect-ratio: auto ;
+      display: flex;
+      flex-direction: column-reverse;
     }
 
     .project-wrapper:hover .project-img{

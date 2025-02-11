@@ -19,6 +19,7 @@ export default function Hero() {
     // Asegurar que GSAP tiene control total sobre las animaciones
     const mm = gsap.matchMedia();
 
+
     // Asegúrate de que los elementos se dividan correctamente
     const titles = new SplitType(".split-titles");
     const smallWords = new SplitType(".split-smalls");
