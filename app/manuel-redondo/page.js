@@ -66,9 +66,7 @@ export default function ProjectPage() {
                 <p className="split-smalls load-text-anim-smalls">
                   <strong>Cliente</strong>
                 </p>
-                <p className="split-smalls load-text-anim-smalls">
-                  Académico
-                </p>
+                <p className="split-smalls load-text-anim-smalls">Académico</p>
               </div>
             </li>
             <li className="project-list-item">
@@ -110,7 +108,7 @@ export default function ProjectPage() {
                   href="https://www.instagram.com/robledano_/"
                   style={{ padding: "0.25rem 0rem", opacity: ".4" }}
                 >
-                  <h4>Yanira Robledano</h4>
+                  <p>Yanira Robledano</p>
                 </a>
               </div>
             </li>
@@ -118,15 +116,37 @@ export default function ProjectPage() {
         </div>
         <div className="inner-project-description-content">
           <h4>
-            Legítimos Mazapanes Vda. de Manuel Redondo, con más de 150 años de
-            historia en Soto en Cameros, La Rioja, es sinónimo de tradición y
-            calidad artesanal. Su identidad visual fue rediseñada para
-            modernizar la marca, manteniendo su esencia histórica y conectando
-            con el consumidor actual. El nuevo diseño combina elegancia,
-            funcionalidad y sostenibilidad, utilizando materiales como la piel
-            de almendra y la cáscara de plátano para el packaging, reflejando un
-            compromiso con la artesanía y la economía circular.
+            Desde 1870, Legítimos Mazapanes Vda. de Manuel Redondo elabora
+            mazapanes artesanales en Soto en Cameros, La Rioja. Con ingredientes
+            seleccionados y métodos tradicionales, la marca refleja su
+            compromiso con la calidad, la historia y la identidad regional.
+            <br />
           </h4>
+          <p style={{ width: "100%" }}>
+            <br />
+            Se identificó que la marca presentaba limitaciones en su diseño
+            original, dificultando su implementación en las aplicaciones
+            requeridas para este proyecto. Ante esta situación, se optó por un
+            rediseño de su identidad visual. El rediseño modernizó una marca
+            centenaria, capturando su tradición y artesanía en una identidad
+            renovada que conecta con el consumidor actual. La nueva imagen
+            combina elegancia, calidad y funcionalidad.
+            <br />
+            <br />
+            El packaging se diseñó para transmitir la esencia artesanal de la
+            marca, ofreciendo una experiencia sensorial completa. Se
+            incorporaron texturas y materiales sostenibles como la piel de
+            almendra o la cáscara de plátano. Este diseño refuerza el compromiso
+            con la artesanía y la sostenibilidad, elevando la experiencia del
+            consumidor.
+            <br />
+            <br />
+            En un esfuerzo por ser sostenibles, se reutiliza la piel de
+            almendra, un subproducto del proceso de producción, como material
+            para el packaging. Esto no solo reduce el desperdicio, sino que
+            también refuerza el compromiso de la marca con la economía circular
+            y el respeto al medio ambiente.
+          </p>
         </div>
       </section>
       <div className="inner-project-grid two-columns">

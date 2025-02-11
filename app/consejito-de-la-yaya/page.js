@@ -108,26 +108,31 @@ export default function ProjectPage() {
               <div className="credits-item">
                 <p className="bold">Diseño</p>
                 <a href="https://www.instagram.com/robledano_/" style={{ padding: '0.25rem 0rem', opacity: '.4' }}>
-                  <h4>Yanira Robledano</h4>
+                  <p>Yanira Robledano</p>
                 </a>
               </div>
               <div className="credits-item">
                 <p className="bold"><br />Tutorizado</p>
                 <a href="#" style={{ paddingTop: '0.25rem', opacity: '.4' }}>
-                  <h4>Oier</h4>
+                  <p>Oier Irisarri</p>
                 </a>
                 <a href="#" style={{ opacity: '.4' }}>
-                  <h4>Nerea Simón</h4>
+                  <p>Nerea Simón</p>
                 </a>
               </div>
             </li>
           </ul>
         </div>
         <div className="inner-project-description-content">
-          <h4>
-          Esta campaña de concienciación está dirigida a la Generación Z y a la denominada "Generación de Cristal", dos grupos influenciados por la digitalización, que ha transformado sus hábitos de comunicación y sus formas de relacionarse.
-          La campaña se articula en torno al claim “Consejito de la Yaya”, un concepto que utiliza la figura entrañable de una abuela como símbolo de confianza, tradición y sabiduría. Con un tono irónico, reflexivo y juvenil, la abuela ofrece consejos a los jóvenes desde una perspectiva cercana, conectando emocionalmente con el público objetivo. Esta propuesta no solo busca generar conciencia sobre los retos de la era digital, sino también invitar a estos jóvenes a la reflexión mediante un enfoque creativo que combina humor y valores.
+        <h4>
+        Este proyecto está dirigido a la Generación Z y a la denominada "Generación de Cristal", dos grupos influenciados por la digitalización, que ha transformado sus hábitos de comunicación y sus formas de relacionarse.
+            <br />
           </h4>
+          <p style={{ width: "100%" }}>
+            <br />
+            La campaña se articula en torno al claim “Consejito de la Yaya”, un concepto que utiliza la figura entrañable de una abuela como símbolo de confianza, tradición y sabiduría. Con un tono irónico, reflexivo y juvenil, la abuela ofrece consejos a los jóvenes desde una perspectiva cercana, conectando emocionalmente con el público objetivo. Esta propuesta no solo busca generar conciencia sobre los retos de la era digital, sino también invitar a estos jóvenes a la reflexión mediante un enfoque creativo que combina humor y valores.
+
+          </p>
         </div>
       </section>
       <div className="inner-project-grid two-columns">

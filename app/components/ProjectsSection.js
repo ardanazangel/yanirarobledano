@@ -22,7 +22,7 @@ export default function ProjectsSection() {
     {
       title: "Madamma Butterfly",
       tags: ["Branding", "Packaging"],
-      imgUrl: "/imgs/consejito-de-la-yaya/foto_mupi.jpg",
+      imgUrl: '/imgs/madamma-butterfly/bodegon-buterfly.jpg',
       link: "/madamma-butterfly",
     },
     {
@@ -36,6 +36,12 @@ export default function ProjectsSection() {
       tags: ["Packaging", "Diseño"],
       imgUrl: "/imgs/manuel-redondo/logo.png",
       link: "/manuel-redondo",
+    },
+    {
+      title: "Suppies",
+      tags: ["Packaging", "Diseño"],
+      imgUrl: "/imgs/suppies/botes-tumbados.jpg",
+      link: "/suppies",
     },
   ];
 
@@ -90,6 +96,7 @@ export default function ProjectsSection() {
                 alt={project.title}
                 width={1280}
                 height={1920}
+                style={{filter:'brightness(.95)', scale:'1.05'}}
               />
             </div>
           </div>

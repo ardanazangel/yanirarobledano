@@ -9,6 +9,11 @@
     keywords: "diseño gráfico, branding, ilustración, Yanira Robledano, portafolio",
     author: "Yanira Robledano",
     robots: "index, follow",
+    icons: {
+      icon: "/favicon.png",
+      shortcut: "/favicon.ico",
+      apple: "/favicon.png",
+    },
   };
   
 
