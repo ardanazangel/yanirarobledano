@@ -117,36 +117,13 @@ export default function ProjectPage() {
         </div>
         <div className="inner-project-description-content">
           <h4>
-            Desde 1870, Legítimos Mazapanes Vda. de Manuel Redondo elabora
-            mazapanes artesanales en Soto en Cameros, La Rioja. Con ingredientes
-            seleccionados y métodos tradicionales, la marca refleja su
-            compromiso con la calidad, la historia y la identidad regional.
+          Este proyecto se centra en el diseño de packaging para una línea de tres batidos infantiles (coco, plátano y mango). El envase está pensado para ser práctico, portable y fácil de consumir, con ilustraciones atractivas que conectan con los niños y generan impacto visual.
+
             <br />
           </h4>
           <p style={{ width: "100%" }}>
             <br />
-            Se identificó que la marca presentaba limitaciones en su diseño
-            original, dificultando su implementación en las aplicaciones
-            requeridas para este proyecto. Ante esta situación, se optó por un
-            rediseño de su identidad visual. El rediseño modernizó una marca
-            centenaria, capturando su tradición y artesanía en una identidad
-            renovada que conecta con el consumidor actual. La nueva imagen
-            combina elegancia, calidad y funcionalidad.
-            <br />
-            <br />
-            El packaging se diseñó para transmitir la esencia artesanal de la
-            marca, ofreciendo una experiencia sensorial completa. Se
-            incorporaron texturas y materiales sostenibles como la piel de
-            almendra o la cáscara de plátano. Este diseño refuerza el compromiso
-            con la artesanía y la sostenibilidad, elevando la experiencia del
-            consumidor.
-            <br />
-            <br />
-            En un esfuerzo por ser sostenibles, se reutiliza la piel de
-            almendra, un subproducto del proceso de producción, como material
-            para el packaging. Esto no solo reduce el desperdicio, sino que
-            también refuerza el compromiso de la marca con la economía circular
-            y el respeto al medio ambiente.
+            La marca destaca por su compromiso con una alimentación infantil saludable, reflejando valores como la naturalidad y la confianza. El diseño utiliza tonos suaves y orgánicos, alineados con las preferencias de padres que buscan productos naturales y seguros para sus hijos.
           </p>
         </div>
       </section>

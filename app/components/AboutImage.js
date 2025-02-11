@@ -11,7 +11,6 @@ const images = [
   '/imgs/imgs-inicio/envases mazapanes.jpg',
   '/imgs/imgs-inicio/ilustracion_mariposas.jpg',
   '/imgs/imgs-inicio/imagen_carteles.png',
-
 ];
 
 export default function AboutImage() {
@@ -59,7 +58,6 @@ export default function AboutImage() {
             height: '100%',
             objectFit: 'cover',
           }}
-          loading='eager'
           width={1920}
           height={1080}
         />
