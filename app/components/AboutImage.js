@@ -5,11 +5,13 @@ import Image from 'next/image';
 
 const images = [
   '/imgs/imgs-inicio/bolsa-cerca.jpeg',
-  '/imgs/imgs-inicio/img_2529.jpg',
+  '/imgs/imgs-inicio/bote_matcha.jpg',
+  '/imgs/imgs-inicio/IMG_2529.jpg',
   '/imgs/imgs-inicio/caja_madame_detalle.jpg',
   '/imgs/imgs-inicio/envases mazapanes.jpg',
   '/imgs/imgs-inicio/ilustracion_mariposas.jpg',
   '/imgs/imgs-inicio/imagen_carteles.png',
+
 ];
 
 export default function AboutImage() {
