@@ -2,6 +2,7 @@ import "../components/Footer.css";
 
 export default function Footer() {
   return (
+    <section className="footer-total-wrapper">
     <div className="footer-wrapper">
       <h2>Hablemos!</h2>
       <a
@@ -36,5 +37,6 @@ export default function Footer() {
       </div>
   
     </div>
+    </section>
   );
 }

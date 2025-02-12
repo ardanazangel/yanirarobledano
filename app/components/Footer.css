@@ -1,5 +1,14 @@
-.footer-wrapper{
+.footer-total-wrapper{
     height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: #0d0d0d;
+}
+
+
+.footer-wrapper{
+    height: 50vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,6 +16,10 @@
     gap: 1.5rem;
     position: relative;
     padding: 0rem 3rem;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    position: sticky;
+    bottom: 0;
 }
 
 .footer-banner{
