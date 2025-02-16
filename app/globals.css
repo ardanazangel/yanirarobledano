@@ -102,7 +102,7 @@ p {
 
 h2 {
   font-family: "Relais Light";
-  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
+  font-size: clamp(3.5rem,1.397rem + 8.627vw,11.75rem);
   font-weight: 400;
   line-height: 0.9em;
   letter-spacing: -0.5vw;
@@ -253,11 +253,19 @@ button{
 }
 
 
-@media (max-width: 1250px) {
+@media (min-width:1600) {
   .inner-project-info {
     min-height: 70vh;
+    gap: 2vw;
+  }
+  .inner-project-title{
+    font-size: 10vw;
+  }
+  .inner-project-description {
+    padding: 4vw 20vw 6vw 20vw;
   }
 }
+
 
 
 @media (max-width: 900px) {
