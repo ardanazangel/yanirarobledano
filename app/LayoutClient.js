@@ -2,6 +2,10 @@
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import { usePathname } from "next/navigation";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function LayoutClient({ children }) {
   const lenisRef = useRef(null); // Referencia de Lenis
@@ -14,7 +18,7 @@ export default function LayoutClient({ children }) {
       direction: "vertical",
       smoothTouch: true,
       touchMultiplier: 0.5,
-      duration:2,
+      duration: 2,
     });
 
     lenisRef.current = lenis;
@@ -32,12 +36,13 @@ export default function LayoutClient({ children }) {
   }, []);
 
   useEffect(() => {
-    // Cada vez que cambie la ruta, desactiva el scroll durante 500ms
+    // Cuando cambia la ruta, refresca ScrollTrigger y reinicia el scroll
     if (lenisRef.current) {
-      lenisRef.current.stop(); // Detén el scroll
+      lenisRef.current.stop(); // Detén el scroll temporalmente
       setTimeout(() => {
-        lenisRef.current.start(); // Reactiva el scroll después de 500 ms
-      }, 0);
+        lenisRef.current.start(); // Reactiva el scroll después de 100ms
+        ScrollTrigger.refresh(); // Refresca ScrollTrigger después del cambio de página
+      }, 100);
     }
   }, [pathname]); // Escucha los cambios en la ruta
 

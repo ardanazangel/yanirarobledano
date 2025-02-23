@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         <Header />
         <LayoutClient>{children}</LayoutClient>
         <Footer />
+        
       </body>
     </html>
 

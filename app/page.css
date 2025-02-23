@@ -1,133 +1,146 @@
-.hero{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .title-hero {
-    font-family: 'Relais';
-    font-size: 15vw;
-    font-weight: 400;
-    line-height: 0.8em;
-    text-align: center;
-    letter-spacing: -0.75vw;
-    z-index: 0;
-    margin-bottom: 2rem;
-  }
-
-  span .letter{
-    transform: translateY(100%);
-    position: absolute;
-    display: inline-block;
-  }
-  .hero-info{
-    display: flex;
-    gap: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
-    width: 100%;
-    justify-content: space-between;
-    align-items: end;
-    padding: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
-    position: absolute;
-    bottom: 0;
-  }
-
-  .hero-img-container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    
-  }
-
-  .img-hero{
-    position: absolute;
-    width: 20vw;
-    aspect-ratio: 3/4;
-    top: 100%;
-  }
-
-  .split-titles .char, .split-smalls .word {
-    position: relative;
-  }
-
-  .about {
-    min-height: 100vh;
-    padding: 25vh 0rem;
+  font-family: 'Relais';
+  font-size: 15vw;
+  font-weight: 400;
+  line-height: 0.8em;
+  text-align: center;
+  letter-spacing: -0.75vw;
+  z-index: 0;
+  margin-bottom: 2rem;
 }
 
-.about-container{
+span .letter {
+  transform: translateY(100%);
+  position: absolute;
+  display: inline-block;
+}
+
+.hero-info {
+  display: flex;
+  gap: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+  padding: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-img-container {
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+}
+
+.img-hero {
+  position: absolute;
+  width: 20vw;
+  aspect-ratio: 3/4;
+  top: 100%;
+}
+
+.split-titles .char,
+.split-smalls .word {
+  position: relative;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 25vh 0rem;
+}
+
+.about-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Define 6 columnas iguales */
+  grid-template-columns: repeat(6, 1fr);
+  /* Define 6 columnas iguales */
   gap: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
 
 }
 
 .about-content {
-    grid-column: 2 / 6; /* Ocupa desde la columna 2 hasta la columna 4 */
-    text-align: center;
+  grid-column: 2 / 6;
+  /* Ocupa desde la columna 2 hasta la columna 4 */
+  text-align: center;
 }
 
-.banner-image{
+.banner-image {
   height: 100vh;
   margin-left: -3rem;
   margin-right: -3rem;
   overflow: hidden;
 }
 
-.img{
+.img {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.img-banner{
+.img-banner {
   scale: 1.25;
 }
 
-.hero-mobile-tracker{
+.hero-mobile-tracker {
   display: none;
 }
 
 @media (max-width: 750px) {
+  .hero {
+    margin-left: clamp(-1rem, .49rem + 2.092vw, -3rem);
 
-  .img-hero{
+  }
+
+  .img-hero {
     width: 65vw;
   }
 
-  .title-desktop{
+  .title-desktop {
     display: none;
   }
 
-  .about-container{
-    grid-template-columns: repeat(6, 1fr); /* Define 6 columnas iguales */
-    grid-column: 1; /* Ocupa desde la columna 2 hasta la columna 4 */
+  .about-container {
+    grid-template-columns: repeat(6, 1fr);
+    /* Define 6 columnas iguales */
+    grid-column: 1;
+    /* Ocupa desde la columna 2 hasta la columna 4 */
   }
 
-  .about-content{
-    grid-column: 1 / 7; /* Ocupa desde la columna 2 hasta la columna 4 */
-    
+  .about-content {
+    grid-column: 1 / 7;
+    /* Ocupa desde la columna 2 hasta la columna 4 */
+
   }
-  .about{
+
+  .about {
     min-height: auto;
     padding: 15vh 0 20vh 0;
   }
 
-  .hero{
+  .hero {
     justify-content: end;
   }
 
-  .title-hero{
+  .title-hero {
     font-size: 40vh;
     letter-spacing: -2vh;
 
   }
 
-  .hero-mobile-tracker{
+  .hero-mobile-tracker {
     display: flex;
     width: fit-content;
     position: absolute;
@@ -140,18 +153,18 @@
     overflow: hidden;
   }
 
-  .hero-img-container{
+  .hero-img-container {
     z-index: 0;
   }
 
-  .img-hero{
+  .img-hero {
     top: 40%;
     transform: translateY(-50%);
   }
 
-  h1{
+  h1 {
     display: flex;
-    
+
   }
 
   .title-hero-span {
@@ -159,15 +172,16 @@
     animation: moveLoop 20s linear infinite;
   }
 
-  .banner-image{
+  .banner-image {
     height: 60vh;
-    
+
   }
-  
+
   @keyframes moveLoop {
     0% {
       transform: translateX(0%);
     }
+
     100% {
       transform: translateX(-100%);
     }
@@ -175,4 +189,3 @@
 
 
 }
-

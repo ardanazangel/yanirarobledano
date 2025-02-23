@@ -54,9 +54,9 @@ img {
   object-fit: cover;
 }
 
-#year{
+#year {
   position: absolute;
-  transform: translate(-100%,0%);
+  transform: translate(-100%, 0%);
 }
 
 .img {
@@ -74,8 +74,6 @@ html {
   color: var(--foreground);
   overflow-x: hidden;
   width: 100%;
-  background-color: var(--background);
-  
 }
 
 .big-spacer {
@@ -102,7 +100,7 @@ p {
 
 h2 {
   font-family: "Relais Light";
-  font-size: clamp(3.5rem,1.397rem + 8.627vw,11.75rem);
+  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
   font-weight: 400;
   line-height: 0.9em;
   letter-spacing: -0.5vw;
@@ -118,7 +116,7 @@ h3 {
 
 h4 {
   font-family: "Area";
-  font-size:clamp(1.5rem, 1.436rem + 0.261vw, 1.75rem);
+  font-size: clamp(1.5rem, 1.436rem + 0.261vw, 1.75rem);
   line-height: 1.4em;
   font-weight: 400;
   text-wrap: balance;
@@ -135,9 +133,12 @@ h4 {
 
 #container {
   opacity: 0;
+  background-color: var(--background);
+  padding-bottom: calc(clamp(1rem, 0.49rem + 2.092vw, 3rem)*2);
+  filter: drop-shadow(0 2vh 10vh rgba(0, 0, 0, 0.05));
 }
 
-button{
+button {
   color: var(--foreground);
 }
 
@@ -199,8 +200,6 @@ button{
   justify-content: space-between;
 }
 
-
-
 .big-image {
   width: 100%;
   aspect-ratio: 16/9;
@@ -210,9 +209,8 @@ button{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
-  padding-top:clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
-  padding-bottom:clamp(3rem, 2.235rem + 3.137vw, 6rem);
-
+  padding-top: clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
+  padding-bottom: clamp(3rem, 2.235rem + 3.137vw, 6rem);
 }
 
 .credits {
@@ -252,13 +250,12 @@ button{
   aspect-ratio: 3/4;
 }
 
-
-@media (min-width:1600) {
+@media (min-width: 1600) {
   .inner-project-info {
     min-height: 70vh;
     gap: 2vw;
   }
-  .inner-project-title{
+  .inner-project-title {
     font-size: 10vw;
   }
   .inner-project-description {
@@ -266,11 +263,7 @@ button{
   }
 }
 
-
-
 @media (max-width: 900px) {
-
-
   .inner-project-info {
     min-height: 60vh;
     gap: clamp(2rem, 1.745rem + 1.046vw, 3rem);
@@ -291,32 +284,28 @@ button{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .project-list-item{
+  .project-list-item {
     width: 100%;
   }
 
-  #year{
+  #year {
     position: relative;
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
-
-
 }
 
 @media (max-width: 750px) {
-
   .inner-project-info {
     min-height: 50vh;
   }
 
-  .about{
+  .about {
     min-height: 50vh;
   }
 
-  .inner-project-tags{
+  .inner-project-tags {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-
   }
 }

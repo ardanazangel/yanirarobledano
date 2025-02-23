@@ -1,13 +1,14 @@
 .footer-total-wrapper{
-    height: 100vh;
+    height: auto;
     position: relative;
     width: 100%;
     background-color: #0d0d0d;
+    z-index: -1;
 }
 
 
 .footer-wrapper{
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,18 +16,18 @@
     flex-direction: column;
     gap: 1.5rem;
     position: relative;
-    padding: 0rem 3rem;
-    background-color: #0d0d0d;
-    color: #f2f2f2;
+    padding: 0rem clamp(1rem, 0.49rem + 2.092vw, 3rem);
+    background-color: #fafafa;
     position: sticky;
     bottom: 0;
 }
+
 
 .footer-banner{
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 3rem;
+    padding: clamp(1rem, 0.49rem + 2.092vw, 3rem);
     display: flex;
     justify-content: space-between;
 }
