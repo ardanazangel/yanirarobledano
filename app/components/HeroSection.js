@@ -16,6 +16,7 @@ CustomEase.create("InOutQuart", "0.770, 0.000, 0.175, 1.000");
 
 export default function Hero() {
   useEffect(() => {
+    const tl = gsap.timeline();
     // Asegurar que GSAP tiene control total sobre las animaciones
     const mm = gsap.matchMedia();
 
