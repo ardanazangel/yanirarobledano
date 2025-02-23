@@ -19,7 +19,6 @@ export default function Hero() {
     // Asegurar que GSAP tiene control total sobre las animaciones
     const mm = gsap.matchMedia();
 
-
     // Asegúrate de que los elementos se dividan correctamente
     const titles = new SplitType(".split-titles");
     const smallWords = new SplitType(".split-smalls");
@@ -53,26 +52,29 @@ export default function Hero() {
 
     // ANIMACIONES PARA ESCRITORIO (min-width: 751px)
     mm.add("(min-width: 751px)", () => {
-      let tl = gsap.timeline();
-
-      gsap.fromTo(".img-hero",{
-        rotate:'0deg'
-      }, {
-        top: "70vh",
-        rotate: "-20deg",
-        ease: "InOutQuart",
-        duration: 1.5,
-        delay: 0.5,
-      });
-
-      tl.fromTo(
+      gsap.fromTo(
         ".img-hero",
-        { opacity: 1, y: "0%", rotate:'-20deg' },
+        {
+          rotate: "0deg",
+          top: "120dvh",
+        },
+        {
+          top: "70vh",
+          rotate: "-20deg",
+          ease: "InOutQuart",
+          duration: 1.5,
+          delay: 0.5,
+        }
+      );
+
+      gsap.fromTo(
+        ".img-hero",
+        { opacity: 1, y: "0%", rotate: "-20deg" },
         {
           y: "-50%",
           opacity: 1,
           duration: 1.5,
-          rotate: '-65deg',
+          rotate: "-65deg",
           delay: 1.5,
           scrollTrigger: {
             trigger: ".total-wrapper",
@@ -83,7 +85,7 @@ export default function Hero() {
         }
       );
 
-      tl.to(".title-hero", {
+      gsap.to(".title-hero", {
         y: "30%",
         duration: 1,
         scrollTrigger: {

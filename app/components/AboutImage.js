@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const images = [
-  '/imgs/imgs-inicio/bolsa-cerca.jpeg',
-  '/imgs/imgs-inicio/BOTE_matcha.jpg',
-  '/imgs/imgs-inicio/IMG_2529.jpg',
-  '/imgs/imgs-inicio/caja_madame_detalle.jpg',
-  '/imgs/imgs-inicio/envases mazapanes.jpg',
-  '/imgs/imgs-inicio/ilustracion_mariposas.jpg',
-  '/imgs/imgs-inicio/imagen_carteles.png',
+  "/imgs/imgs-inicio/bolsa-cerca.jpeg",
+  "/imgs/imgs-inicio/BOTE_matcha.jpg",
+  "/imgs/imgs-inicio/IMG_2529.jpg",
+  "/imgs/imgs-inicio/caja_madame_detalle.jpg",
+  "/imgs/imgs-inicio/envases mazapanes.jpg",
+  "/imgs/imgs-inicio/ilustracion_mariposas.jpg",
+  "/imgs/imgs-inicio/imagen_carteles.png",
 ];
 
 export default function AboutImage() {
@@ -21,7 +21,7 @@ export default function AboutImage() {
 
     // Asegurar que la primera imagen siempre sea visible
     for (let i = 0; i < imageElements.length; i++) {
-      imageElements[i].style.opacity = i === 0 ? '1' : '0';
+      imageElements[i].style.opacity = i === 0 ? "1" : "0";
     }
 
     const handleScroll = () => {
@@ -37,29 +37,29 @@ export default function AboutImage() {
       );
 
       for (let i = 0; i < imageElements.length; i++) {
-        imageElements[i].style.opacity = i === index ? '1' : '0';
+        imageElements[i].style.opacity = i === index ? "1" : "0";
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div ref={containerRef} style={{ position: 'relative', height: '100%' }}>
+    <div ref={containerRef} style={{ position: "relative", height: "100%" }}>
       {images.map((src, index) => (
         <Image
           key={index}
           src={src}
           alt="Hero image"
           style={{
-            position: 'absolute',
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
           }}
-          width={1920}
-          height={1080}
+          width={360}
+          height={256}
         />
       ))}
     </div>
