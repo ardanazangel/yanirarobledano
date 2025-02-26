@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useEffect } from "react";
 import gsap from "gsap";
@@ -13,32 +13,38 @@ export default function Footer() {
     let ctx = gsap.context(() => {
       gsap.fromTo(
         ".footer-wrapper",
-        { y: "-50%" },
+        { y: "-25%" },
         {
           y: "0%",
           scrollTrigger: {
             trigger: ".footer-total-wrapper",
-            start: "-25% bottom",
-            end: "bottom bottom",
+            start: "top bottom",
+            easing: "linear",
+            end: "bottom 110%",
             scrub: true,
           },
         }
       );
     });
-
   }, []);
 
   return (
     <section className="footer-total-wrapper">
       <div className="footer-wrapper">
         <h2>Hablemos!</h2>
-        <a href="mailto:yanirarobledanoperez@gmail.com" rel="noopener noreferrer">
-          <h4>yanirarobledanoperez@gmail.com</h4>
+        <a
+          href="mailto:yanirarobledanoperez@gmail.com"
+          rel="noopener noreferrer"
+        >
+          <h4>Gmail</h4>
         </a>
         <div className="footer-banner">
           <p>
             Made with love by{" "}
-            <a href="https://www.instagram.com/ardanaz.angel/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/ardanaz.angel/"
+              style={{ zIndex: 100 }}
+            >
               @ardanaz.angel
             </a>
           </p>

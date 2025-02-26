@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LayoutClient from "./LayoutClient";
 
-
 export const metadata = {
   title: "Yanira Robledano",
   description: "Portfolio Oficial de Yanira Robledano. Diseñadora gráfica.",
@@ -11,6 +10,7 @@ export const metadata = {
     "diseño gráfico, branding, ilustración, Yanira Robledano, portafolio",
   author: "Yanira Robledano",
   robots: "index, follow",
+  favicon: "/favicon.ico",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.ico",
@@ -25,9 +25,7 @@ export default function RootLayout({ children }) {
         <Header />
         <LayoutClient>{children}</LayoutClient>
         <Footer />
-        
       </body>
     </html>
-
   );
 }

@@ -135,7 +135,9 @@ h4 {
   opacity: 0;
   background-color: var(--background);
   padding-bottom: calc(clamp(1rem, 0.49rem + 2.092vw, 3rem)*2);
-  filter: drop-shadow(0 2vh 10vh rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(0 32px 64px rgba(0, 0, 0, 0.05));
+  position: relative;
+  z-index: 1;
 }
 
 button {
@@ -255,9 +257,11 @@ button {
     min-height: 70vh;
     gap: 2vw;
   }
+
   .inner-project-title {
     font-size: 10vw;
   }
+
   .inner-project-description {
     padding: 4vw 20vw 6vw 20vw;
   }
@@ -280,10 +284,12 @@ button {
   .one-columns img {
     aspect-ratio: 3/4;
   }
+
   .two-columns {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .project-list-item {
     width: 100%;
   }
