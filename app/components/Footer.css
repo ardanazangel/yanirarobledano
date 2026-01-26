@@ -1,0 +1,72 @@
+.footer-total-wrapper {
+    height: auto;
+    position: relative;
+    width: 100%;
+    background-color: #0d0d0d;
+    z-index: 0;
+}
+
+
+.footer-wrapper {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    padding: 0rem clamp(1rem, 0.49rem + 2.092vw, 3rem);
+    background-color: #fafafa;
+    position: sticky;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+.footer-banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: clamp(1rem, 0.49rem + 2.092vw, 3rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-relevant {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.search-intership-wrapper {
+    position: absolute;
+    bottom: 0;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.internship-tracker {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0.25rem 0rem;
+    width: 200vw;
+    transform: translate(15%);
+}
+
+@media (max-width: 750px) {
+    .footer-relevant {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .footer-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8vw;
+    }
+
+}

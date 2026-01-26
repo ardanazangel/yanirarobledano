@@ -1,0 +1,317 @@
+:root {
+  --background: #fafafa;
+  --foreground: #0d0d0d;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Para Internet Explorer y Edge antiguo */
+body {
+  -ms-overflow-style: none;
+}
+
+@font-face {
+  font-family: "Relais";
+  src: url("../public/fonts/RelaisDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Relais Light";
+  src: url("../public/fonts/RelaisDisplay-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Relais Light Italic";
+  src: url("../public/fonts/RelaisDisplay-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Area";
+  src: url(../public/fonts/AreaNormal-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Area Bold";
+  src: url(../public/fonts/AreaNormal-Bold.woff2) format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#year {
+  position: absolute;
+  transform: translate(-100%, 0%);
+}
+
+.img {
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body,
+html {
+  /*background-color: var(--background);*/
+  color: var(--foreground);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.big-spacer {
+  height: 15vh;
+}
+
+p {
+  font-family: "Area";
+  font-size: clamp(0.813rem, 0.765rem + 0.196vw, 1rem);
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
+.bold {
+  font-family: "Area Bold";
+}
+
+h2 {
+  font-family: "Relais Light";
+  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
+  font-weight: 400;
+  line-height: 0.9em;
+  letter-spacing: -0.5vw;
+}
+
+h3 {
+  font-family: "Relais Light";
+  font-size: clamp(2rem, 1.49rem + 2.092vw, 4rem);
+  font-weight: 400;
+  line-height: 0.9em;
+  letter-spacing: -0.1vw;
+}
+
+h4 {
+  font-family: "Area";
+  font-size: clamp(1.5rem, 1.436rem + 0.261vw, 1.75rem);
+  line-height: 1.4em;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+.italic {
+  font-family: "Relais Light Italic";
+}
+
+.total-wrapper {
+  padding-left: clamp(1rem, 0.49rem + 2.092vw, 3rem);
+  padding-right: clamp(1rem, 0.49rem + 2.092vw, 3rem);
+}
+
+#container {
+  opacity: 0;
+  background-color: var(--background);
+  padding-bottom: calc(clamp(1rem, 0.49rem + 2.092vw, 3rem)*2);
+  filter: drop-shadow(0 32px 64px rgba(0, 0, 0, 0.05));
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  color: var(--foreground);
+}
+
+.nav-buttons {
+  font-family: "Area";
+  border: 0px;
+  background-color: transparent;
+  font-size: clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);
+  cursor: pointer;
+}
+
+.project-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.split-smalls {
+  font-kerning: none;
+}
+
+.split-titles {
+  font-kerning: none;
+}
+
+.inner-project-info {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.inner-project-title {
+  font-family: "Relais Light";
+  font-weight: 400;
+  text-align: center;
+  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
+
+  line-height: 0.9em;
+  letter-spacing: -0.5vw;
+}
+
+.inner-project-tags {
+  padding: clamp(1.5rem, 0.353rem + 4.706vw, 6rem);
+  width: 75%;
+  display: flex;
+}
+
+.inner-project-tag {
+  text-align: center;
+}
+
+.inner-project-tags-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.inner-project-description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+  padding-top: clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
+  padding-bottom: clamp(3rem, 2.235rem + 3.137vw, 6rem);
+}
+
+.credits {
+  width: 100%;
+}
+
+.credits-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
+}
+
+.inner-project-grid {
+  display: grid;
+  width: 100%;
+  padding-bottom: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+}
+
+.one-columns {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+}
+
+.one-columns img {
+  aspect-ratio: 16/9;
+}
+
+.two-columns img {
+  aspect-ratio: 3/4;
+}
+
+@media (min-width: 1600) {
+  .inner-project-info {
+    min-height: 70vh;
+    gap: 2vw;
+  }
+
+  .inner-project-title {
+    font-size: 10vw;
+  }
+
+  .inner-project-description {
+    padding: 4vw 20vw 6vw 20vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner-project-info {
+    min-height: 60vh;
+    gap: clamp(2rem, 1.745rem + 1.046vw, 3rem);
+  }
+
+  .inner-project-description {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .big-image {
+    aspect-ratio: 3/4;
+  }
+
+  .one-columns img {
+    aspect-ratio: 3/4;
+  }
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-list-item {
+    width: 100%;
+  }
+
+  #year {
+    position: relative;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 750px) {
+  .inner-project-info {
+    min-height: 50vh;
+  }
+
+  .about {
+    min-height: 50vh;
+  }
+
+  .inner-project-tags {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
