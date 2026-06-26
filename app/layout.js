@@ -18,13 +18,65 @@ const area = localFont({
   variable: "--font-area",
 });
 
+const siteUrl = "https://www.yanirarobledano.com";
+
 export const metadata = {
-  title: "Yanira Robledano",
-  description: "Portfolio Oficial de Yanira Robledano. Diseñadora gráfica.",
-  keywords: "diseño gráfico, branding, ilustración, Yanira Robledano, portafolio",
-  author: "Yanira Robledano",
-  robots: "index, follow",
-  favicon: "/favicon.ico",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Yanira Robledano | Diseñadora gráfica",
+    template: "%s | Yanira Robledano",
+  },
+  description:
+    "Portfolio de Yanira Robledano, diseñadora gráfica especializada en branding, packaging, publicidad e ilustración.",
+  keywords: [
+    "Yanira Robledano",
+    "diseñadora gráfica",
+    "diseño gráfico",
+    "branding",
+    "packaging",
+    "publicidad",
+    "ilustración",
+    "portfolio diseño gráfico",
+  ],
+  authors: [{ name: "Yanira Robledano" }],
+  creator: "Yanira Robledano",
+  publisher: "Yanira Robledano",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "/",
+    siteName: "Yanira Robledano",
+    title: "Yanira Robledano | Diseñadora gráfica",
+    description:
+      "Portfolio de Yanira Robledano, diseñadora gráfica especializada en branding, packaging, publicidad e ilustración.",
+    images: [
+      {
+        url: "/imgs/imgs-inicio/PORT03.JPG",
+        width: 1200,
+        height: 800,
+        alt: "Portfolio de Yanira Robledano",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yanira Robledano | Diseñadora gráfica",
+    description:
+      "Portfolio de Yanira Robledano, diseñadora gráfica especializada en branding, packaging, publicidad e ilustración.",
+    images: ["/imgs/imgs-inicio/PORT03.JPG"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.ico",
