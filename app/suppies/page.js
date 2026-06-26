@@ -91,7 +91,7 @@ export default function ProjectPage() {
       </section>
       <section className="inner-project-first-image">
         <Image
-          src="/imgs/suppies/botes-lejos.jpg"
+          src="/imgs/suppies/botes-lejos.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -130,7 +130,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid two-columns">
         <div className="img">
           <Image
-            src="/imgs/suppies/mango.jpg"
+            src="/imgs/suppies/mango.webp"
             width={1280}
             height={1920}
             alt="Bolsa y caja de mazapanes de Vda. de Manuel Redondo"
@@ -138,7 +138,7 @@ export default function ProjectPage() {
         </div>
         <div className="img">
           <Image
-            src="/imgs/suppies/coco.jpg"
+            src="/imgs/suppies/coco.webp"
             width={1280}
             height={1920}
             alt="Dos cajas de mazapanes de Vda. de Manuel Redondo"
@@ -148,7 +148,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid one-columns">
         <div className="img">
           <Image
-            src="/imgs/suppies/personajes-finales.png"
+            src="/imgs/suppies/personajes-finales.webp"
             style={{ filter: "brightness(.95)", transform:'translateY(0%)' }}
             width={1280}
             height={1920}

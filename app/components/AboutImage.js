@@ -4,13 +4,13 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const images = [
-  "/imgs/imgs-inicio/bolsa-cerca.jpeg",
-  "/imgs/imgs-inicio/BOTE_matcha.jpg",
-  "/imgs/imgs-inicio/IMG_2529.jpg",
-  "/imgs/imgs-inicio/caja_madame_detalle.jpg",
-  "/imgs/imgs-inicio/envases mazapanes.jpg",
-  "/imgs/imgs-inicio/ilustracion_mariposas.jpg",
-  "/imgs/imgs-inicio/imagen_carteles.png",
+  "/imgs/imgs-inicio/bolsa-cerca.webp",
+  "/imgs/imgs-inicio/BOTE_matcha.webp",
+  "/imgs/imgs-inicio/IMG_2529.webp",
+  "/imgs/imgs-inicio/caja_madame_detalle.webp",
+  "/imgs/imgs-inicio/envases mazapanes.webp",
+  "/imgs/imgs-inicio/ilustracion_mariposas.webp",
+  "/imgs/imgs-inicio/imagen_carteles.webp",
 ];
 
 export default function AboutImage() {

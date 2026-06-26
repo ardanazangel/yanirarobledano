@@ -13,13 +13,7 @@ export default function LayoutClient({ children }) {
 
   useEffect(() => {
     // Inicializa Lenis (scroll suave)
-    const lenis = new Lenis({
-      smooth: true,
-      direction: "vertical",
-      smoothTouch: true,
-      touchMultiplier: 0.5,
-      duration: 2,
-    });
+    const lenis = new Lenis({});
 
     lenisRef.current = lenis;
 

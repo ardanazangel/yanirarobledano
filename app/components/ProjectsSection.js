@@ -22,25 +22,25 @@ export default function ProjectsSection() {
     {
       title: "Madamma Butterfly",
       tags: ["Branding", "Packaging"],
-      imgUrl: '/imgs/madamma-butterfly/bodegon-buterfly.jpg',
+      imgUrl: '/imgs/madamma-butterfly/bodegon-buterfly.webp',
       link: "/madamma-butterfly",
     },
     {
       title: "Consejito de la Yaya",
       tags: ["Branding", "Publicidad", "Redes Sociales"],
-      imgUrl: "/imgs/consejito-de-la-yaya/foto_mupi.jpg",
+      imgUrl: "/imgs/consejito-de-la-yaya/foto_mupi.webp",
       link: "/consejito-de-la-yaya",
     },
     {
       title: "Vda. de Manuel Redondo",
       tags: ["Packaging", "Diseño"],
-      imgUrl: "/imgs/manuel-redondo/logo.png",
+      imgUrl: "/imgs/manuel-redondo/logo.webp",
       link: "/manuel-redondo",
     },
     {
       title: "Suppies",
       tags: ["Packaging", "Diseño"],
-      imgUrl: "/imgs/suppies/botes-tumbados.jpg",
+      imgUrl: "/imgs/suppies/botes-tumbados.webp",
       link: "/suppies",
     },
   ];

@@ -91,7 +91,7 @@ export default function ProjectPage() {
       </section>
       <section className="inner-project-first-image">
         <Image
-          src="/imgs/consejito-de-la-yaya/posters.png"
+          src="/imgs/consejito-de-la-yaya/posters.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -154,7 +154,7 @@ export default function ProjectPage() {
         </div>
         <div className="img">
           <Image
-            src="/imgs/consejito-de-la-yaya/movil3.jpg"
+            src="/imgs/consejito-de-la-yaya/movil3.webp"
             width={1280}
             height={1920}
             alt="Mockup de un móvil mostrando la campaña Consejito de la Yaya"
@@ -164,7 +164,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid one-columns">
         <div className="img">
           <Image
-            src="/imgs/consejito-de-la-yaya/foto_mupi.jpg"
+            src="/imgs/consejito-de-la-yaya/foto_mupi.webp"
             style={{ filter: "brightness(1.1)" }}
             width={1280}
             height={1920}

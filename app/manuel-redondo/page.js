@@ -90,7 +90,7 @@ export default function ProjectPage() {
       </section>
       <section className="inner-project-first-image">
         <Image
-          src="/imgs/manuel-redondo/textura.jpg"
+          src="/imgs/manuel-redondo/textura.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -170,7 +170,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid one-columns">
         <div className="img">
           <Image
-            src="/imgs/manuel-redondo/foto-papel.jpg"
+            src="/imgs/manuel-redondo/foto-papel.webp"
             style={{ filter: "brightness(1.1)" }}
             width={1280}
             height={1920}

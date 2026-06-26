@@ -91,7 +91,7 @@ export default function ProjectPage() {
       </section>
       <section className="inner-project-first-image">
         <Image
-          src="/imgs/madamma-butterfly/caja_madamme.jpg"
+          src="/imgs/madamma-butterfly/caja_madamme.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -139,7 +139,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid two-columns">
         <div className="img">
         <Image
-          src="/imgs/madamma-butterfly/BOTE_matcha.jpg"
+          src="/imgs/madamma-butterfly/BOTE_matcha.webp"
           className="big-image"
           style={{filter:'brightness(.95)'}}
           width={1920}
@@ -150,7 +150,7 @@ export default function ProjectPage() {
         </div>
         <div className="img">
         <Image
-          src="/imgs/madamma-butterfly/caja_madame_detalle.jpg"
+          src="/imgs/madamma-butterfly/caja_madame_detalle.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -162,7 +162,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid one-columns">
         <div className="img">
         <Image
-          src="/imgs/madamma-butterfly/cartel_opera.jpg"
+          src="/imgs/madamma-butterfly/cartel_opera.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -174,7 +174,7 @@ export default function ProjectPage() {
       <div className="inner-project-grid two-columns">
         <div className="img" style={{ aspectRatio: "3/4" }}>
         <Image
-          src="/imgs/madamma-butterfly/VELA.jpg"
+          src="/imgs/madamma-butterfly/VELA.webp"
           className="big-image"
           width={1920}
           height={1080}
@@ -189,7 +189,7 @@ export default function ProjectPage() {
           style={{ position: "relative", aspectRatio: "3/4" }}
         >
         <Image
-          src="/imgs/madamma-butterfly/ilustracion_mariposas.jpg"
+          src="/imgs/madamma-butterfly/ilustracion_mariposas.webp"
           className="big-image"
           width={1920}
           height={1080}

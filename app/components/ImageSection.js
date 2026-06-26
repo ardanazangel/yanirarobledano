@@ -29,7 +29,7 @@ export default function ImageSection() {
         <div className="img">
           <Image
             className="img-banner"
-            src="/imgs/madamma-butterfly/cartel_opera.jpg" // Fixed src path
+            src="/imgs/madamma-butterfly/cartel_opera.webp" // Fixed src path
             width={1920}
             height={1080}
             alt="Banner image"
