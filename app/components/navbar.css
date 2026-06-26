@@ -1,5 +1,5 @@
 nav {
-    padding: clamp(1rem, 0.49rem + 2.092vw, 3rem);
+    padding: 2.5vw;
     position: fixed;
 }
 
@@ -23,7 +23,7 @@ a{
 }
 
 .navbar-item{
-    font-size: clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);
+    font-size: 1.25vw;
     font-family: 'Area';
     font-weight: 400;
 }
@@ -58,7 +58,3 @@ a{
     }
 }
 
-.navbar.hidden {
-    transform: translateY(-100%);
-    transition: all 0.3s ease-in-out;
-  }

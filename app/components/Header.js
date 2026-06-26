@@ -1,31 +1,9 @@
-'use client'
-
-import { useState, useEffect } from "react";
 import "../components/navbar.css";
 import TransitionLink from "./TransitionLink";
 
 export default function Header() {
-  const [isHidden, setIsHidden] = useState(false);
-  let lastScrollY = 0;
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setIsHidden(true); // Oculta el header cuando haces scroll hacia abajo
-      } else {
-        setIsHidden(false); // Muestra el header cuando subes
-      }
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <nav className={`navbar ${isHidden ? "hidden" : ""}`}>
+    <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
           <div className="navbar-link">

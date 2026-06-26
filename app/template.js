@@ -6,7 +6,8 @@ import { animatePageIn } from "@/app/utils/transitionAnim"
 
 export default function Template({children}){
 
-    useEffect (()=>{
+    useEffect(()=>{
+        window.scrollTo(0, 0)
         animatePageIn()
     }, [])
 

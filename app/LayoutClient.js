@@ -32,10 +32,11 @@ export default function LayoutClient({ children }) {
   useEffect(() => {
     // Cuando cambia la ruta, refresca ScrollTrigger y reinicia el scroll
     if (lenisRef.current) {
-      lenisRef.current.stop(); // Detén el scroll temporalmente
+      lenisRef.current.stop()
+      lenisRef.current.scrollTo(0, { immediate: true })
       setTimeout(() => {
-        lenisRef.current.start(); // Reactiva el scroll después de 100ms
-        ScrollTrigger.refresh(); // Refresca ScrollTrigger después del cambio de página
+        lenisRef.current.start()
+        ScrollTrigger.refresh()
       }, 100);
     }
   }, [pathname]); // Escucha los cambios en la ruta

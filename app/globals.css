@@ -1,317 +1,317 @@
 :root {
-  --background: #fafafa;
-  --foreground: #0d0d0d;
+    --background: #fafafa;
+    --foreground: #0d0d0d;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Para Firefox */
 html {
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
 
 /* Para Internet Explorer y Edge antiguo */
 body {
-  -ms-overflow-style: none;
+    -ms-overflow-style: none;
 }
 
 @font-face {
-  font-family: "Relais";
-  src: url("../public/fonts/RelaisDisplay-Regular.woff2") format("woff2");
+    font-family: "Relais";
+    src: url("../public/fonts/RelaisDisplay-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Relais Light";
-  src: url("../public/fonts/RelaisDisplay-Light.woff2") format("woff2");
+    font-family: "Relais Light";
+    src: url("../public/fonts/RelaisDisplay-Light.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Relais Light Italic";
-  src: url("../public/fonts/RelaisDisplay-LightItalic.woff2") format("woff2");
+    font-family: "Relais Light Italic";
+    src: url("../public/fonts/RelaisDisplay-LightItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Area";
-  src: url(../public/fonts/AreaNormal-Regular.woff2) format("woff2");
+    font-family: "Area";
+    src: url(../public/fonts/AreaNormal-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Area Bold";
-  src: url(../public/fonts/AreaNormal-Bold.woff2) format("woff2");
+    font-family: "Area Bold";
+    src: url(../public/fonts/AreaNormal-Bold.woff2) format("woff2");
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #year {
-  position: absolute;
-  transform: translate(-100%, 0%);
+    position: absolute;
+    transform: translate(-100%, 0%);
 }
 
 .img {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 body,
 html {
-  /*background-color: var(--background);*/
-  color: var(--foreground);
-  overflow-x: hidden;
-  width: 100%;
+    /*background-color: var(--background);*/
+    color: var(--foreground);
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .big-spacer {
-  height: 15vh;
+    height: 15vh;
 }
 
 p {
-  font-family: "Area";
-  font-size: clamp(0.813rem, 0.765rem + 0.196vw, 1rem);
-  line-height: 1.5em;
-  font-weight: 400;
+    font-family: "Area";
+    font-size: 0.83vw;
+    line-height: 1.5em;
+    font-weight: 400;
 }
 
 .video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/4;
 }
 
 .bold {
-  font-family: "Area Bold";
+    font-family: "Area Bold";
 }
 
 h2 {
-  font-family: "Relais Light";
-  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
-  font-weight: 400;
-  line-height: 0.9em;
-  letter-spacing: -0.5vw;
+    font-family: "Relais Light";
+    font-size: 9.79vw;
+    font-weight: 400;
+    line-height: 0.9em;
+    letter-spacing: -0.5vw;
 }
 
 h3 {
-  font-family: "Relais Light";
-  font-size: clamp(2rem, 1.49rem + 2.092vw, 4rem);
-  font-weight: 400;
-  line-height: 0.9em;
-  letter-spacing: -0.1vw;
+    font-family: "Relais Light";
+    font-size: 3.33vw;
+    font-weight: 400;
+    line-height: 0.9em;
+    letter-spacing: -0.1vw;
 }
 
 h4 {
-  font-family: "Area";
-  font-size: clamp(1.5rem, 1.436rem + 0.261vw, 1.75rem);
-  line-height: 1.4em;
-  font-weight: 400;
-  text-wrap: balance;
+    font-family: "Area";
+    font-size: 1.46vw;
+    line-height: 1.4em;
+    font-weight: 400;
+    text-wrap: balance;
 }
 
 .italic {
-  font-family: "Relais Light Italic";
+    font-family: "Relais Light Italic";
 }
 
 .total-wrapper {
-  padding-left: clamp(1rem, 0.49rem + 2.092vw, 3rem);
-  padding-right: clamp(1rem, 0.49rem + 2.092vw, 3rem);
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 }
 
 #container {
-  opacity: 0;
-  background-color: var(--background);
-  padding-bottom: calc(clamp(1rem, 0.49rem + 2.092vw, 3rem)*2);
-  filter: drop-shadow(0 32px 64px rgba(0, 0, 0, 0.05));
-  position: relative;
-  z-index: 1;
+    opacity: 0;
+    background-color: var(--background);
+    padding-bottom: 5vw;
+    filter: drop-shadow(0 32px 64px rgba(0, 0, 0, 0.05));
+    position: relative;
+    z-index: 1;
 }
 
 button {
-  color: var(--foreground);
+    color: var(--foreground);
 }
 
 .nav-buttons {
-  font-family: "Area";
-  border: 0px;
-  background-color: transparent;
-  font-size: clamp(1.25rem, 1.186rem + 0.261vw, 1.5rem);
-  cursor: pointer;
+    font-family: "Area";
+    border: 0px;
+    background-color: transparent;
+    font-size: 1.25vw;
+    cursor: pointer;
 }
 
 .project-link {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  cursor: pointer;
-  z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .split-smalls {
-  font-kerning: none;
+    font-kerning: none;
 }
 
 .split-titles {
-  font-kerning: none;
+    font-kerning: none;
 }
 
 .inner-project-info {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    padding-top: 20vw;
 }
 
 .inner-project-title {
-  font-family: "Relais Light";
-  font-weight: 400;
-  text-align: center;
-  font-size: clamp(3.5rem, 1.397rem + 8.627vw, 11.75rem);
+    font-family: "Relais Light";
+    font-weight: 400;
+    text-align: center;
+    font-size: 9.79vw;
 
-  line-height: 0.9em;
-  letter-spacing: -0.5vw;
+    line-height: 0.9em;
+    letter-spacing: -0.5vw;
 }
 
 .inner-project-tags {
-  padding: clamp(1.5rem, 0.353rem + 4.706vw, 6rem);
-  width: 75%;
-  display: flex;
+    padding: 5vw;
+    width: 75%;
+    display: flex;
 }
 
 .inner-project-tag {
-  text-align: center;
+    text-align: center;
 }
 
 .inner-project-tags-list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .big-image {
-  width: 100%;
-  aspect-ratio: 16/9;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .inner-project-description {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
-  padding-top: clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
-  padding-bottom: clamp(3rem, 2.235rem + 3.137vw, 6rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25vw;
+    padding-top: 2.5vw;
+    padding-bottom: 5vw;
 }
 
 .credits {
-  width: 100%;
+    width: 100%;
 }
 
 .credits-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  margin-right: clamp(1.5rem, 1.118rem + 1.569vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 2.5vw;
 }
 
 .inner-project-grid {
-  display: grid;
-  width: 100%;
-  padding-bottom: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+    display: grid;
+    width: 100%;
+    padding-bottom: 1.25vw;
 }
 
 .one-columns {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25vw;
 }
 
 .two-columns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: clamp(1rem, 0.873rem + 0.523vw, 1.5rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25vw;
 }
 
 .one-columns img {
-  aspect-ratio: 16/9;
+    aspect-ratio: 16/9;
 }
 
 .two-columns img {
-  aspect-ratio: 3/4;
+    aspect-ratio: 3/4;
 }
 
 @media (min-width: 1600) {
-  .inner-project-info {
-    min-height: 70vh;
-    gap: 2vw;
-  }
+    .inner-project-info {
+        min-height: 70vh;
+        gap: 2vw;
+    }
 
-  .inner-project-title {
-    font-size: 10vw;
-  }
+    .inner-project-title {
+        font-size: 10vw;
+    }
 
-  .inner-project-description {
-    padding: 4vw 20vw 6vw 20vw;
-  }
+    .inner-project-description {
+        padding: 4vw 20vw 6vw 20vw;
+    }
 }
 
 @media (max-width: 900px) {
-  .inner-project-info {
-    min-height: 60vh;
-    gap: clamp(2rem, 1.745rem + 1.046vw, 3rem);
-  }
+    .inner-project-info {
+        min-height: 60vh;
+        gap: 2.5vw;
+    }
 
-  .inner-project-description {
-    grid-template-columns: repeat(1, 1fr);
-  }
+    .inner-project-description {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-  .big-image {
-    aspect-ratio: 3/4;
-  }
+    .big-image {
+        aspect-ratio: 3/4;
+    }
 
-  .one-columns img {
-    aspect-ratio: 3/4;
-  }
+    .one-columns img {
+        aspect-ratio: 3/4;
+    }
 
-  .two-columns {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+    .two-columns {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-  .project-list-item {
-    width: 100%;
-  }
+    .project-list-item {
+        width: 100%;
+    }
 
-  #year {
-    position: relative;
-    transform: translate(0, 0);
-  }
+    #year {
+        position: relative;
+        transform: translate(0, 0);
+    }
 }
 
 @media (max-width: 750px) {
-  .inner-project-info {
-    min-height: 50vh;
-  }
+    .inner-project-info {
+        min-height: 50vh;
+    }
 
-  .about {
-    min-height: 50vh;
-  }
+    .about {
+        min-height: 50vh;
+    }
 
-  .inner-project-tags {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .inner-project-tags {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
