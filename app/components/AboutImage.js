@@ -4,12 +4,12 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const images = [
-  "/imgs/imgs-inicio/PORT03.jpg",
+  "/imgs/imgs-inicio/PORT03.JPG",
   "/imgs/imgs-inicio/PORT05.jpg",
-  "/imgs/imgs-inicio/PORT09.jpg",
-  "/imgs/imgs-inicio/PORT03.jpg",
+  "/imgs/imgs-inicio/PORT09.JPG",
+  "/imgs/imgs-inicio/PORT03.JPG",
   "/imgs/imgs-inicio/PORT05.jpg",
-  "/imgs/imgs-inicio/PORT09.jpg",
+  "/imgs/imgs-inicio/PORT09.JPG",
 ];
 
 export default function AboutImage() {

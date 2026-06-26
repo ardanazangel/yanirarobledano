@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# non-optimized source images
+/public/imgs/**/*.jpg
+/public/imgs/**/*.jpeg
+/public/imgs/**/*.JPG
+/public/imgs/**/*.JPEG
+/public/imgs/**/*.png
+/public/imgs/**/*.PNG
+/public/imgs/**/*.heic
+/public/imgs/**/*.HEIC
+/public/imgs/**/*.tif
+/public/imgs/**/*.tiff
+/public/imgs/**/*.TIF
+/public/imgs/**/*.TIFF
+
+!public/imgs/imgs-inicio/
+!public/imgs/imgs-inicio/**
