@@ -1,5 +1,5 @@
 nav {
-    padding: 2.5vw;
+    padding: var(--sp-md);
     position: fixed;
 }
 
@@ -23,7 +23,7 @@ a{
 }
 
 .navbar-item{
-    font-size: 1.25vw;
+    font-size: var(--fs-nav);
     font-family: 'Area';
     font-weight: 400;
 }

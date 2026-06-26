@@ -10,24 +10,25 @@ import "../components/Footer.css";
 
 export default function Footer() {
   useEffect(() => {
+    if (window.matchMedia("(max-width: 750px)").matches) return;
     let ctx = gsap.context(() => {
       gsap.fromTo(
         ".footer-wrapper",
-        { y: "-25%" },
+        { y: "-60%" },
         {
           y: "0%",
+          ease: "none",
           scrollTrigger: {
             trigger: ".footer-total-wrapper",
             start: "top bottom",
-            easing: "linear",
-            end: "bottom 110%",
+            end: "bottom bottom",
             scrub: true,
           },
-        }
+        },
       );
     });
+    return () => ctx.revert();
   }, []);
-
   return (
     <section className="footer-total-wrapper">
       <div className="footer-wrapper">
@@ -42,16 +43,16 @@ export default function Footer() {
           <p>
             Made with love by{" "}
             <a
-              href="https://www.instagram.com/ardanaz.angel/"
+              href="https://www.instagram.com/angel.ardanaz/"
               style={{ zIndex: 100 }}
             >
-              @ardanaz.angel
+              @angel.ardanaz
             </a>
           </p>
           <div className="footer-relevant">
             <p>
               <a href="/" target="_blank" rel="noopener noreferrer">
-                Yanira Robledano ®2025
+                Yanira Robledano ®2026
               </a>
             </p>
             <p>

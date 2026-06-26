@@ -4,13 +4,12 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const images = [
-  "/imgs/imgs-inicio/bolsa-cerca.webp",
-  "/imgs/imgs-inicio/BOTE_matcha.webp",
-  "/imgs/imgs-inicio/IMG_2529.webp",
-  "/imgs/imgs-inicio/caja_madame_detalle.webp",
-  "/imgs/imgs-inicio/envases mazapanes.webp",
-  "/imgs/imgs-inicio/ilustracion_mariposas.webp",
-  "/imgs/imgs-inicio/imagen_carteles.webp",
+  "/imgs/imgs-inicio/PORT03.jpg",
+  "/imgs/imgs-inicio/PORT05.jpg",
+  "/imgs/imgs-inicio/PORT09.jpg",
+  "/imgs/imgs-inicio/PORT03.jpg",
+  "/imgs/imgs-inicio/PORT05.jpg",
+  "/imgs/imgs-inicio/PORT09.jpg",
 ];
 
 export default function AboutImage() {
@@ -33,7 +32,7 @@ export default function AboutImage() {
       const progress = scrollPosition / animationHeight;
       const index = Math.min(
         Math.max(0, Math.floor(progress * images.length)),
-        images.length - 1
+        images.length - 1,
       );
 
       for (let i = 0; i < imageElements.length; i++) {

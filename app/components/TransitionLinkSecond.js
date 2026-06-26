@@ -2,22 +2,20 @@
 
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "../utils/transitionAnim"
-import Link from "next/link"
 
 const TransitionLinkSecond = ({href}) => {
     const router = useRouter()
     const pathname = usePathname()
 
-    const handleClick = () => {
-        if (pathname != href){
+    const handleClick = (e) => {
+        e.preventDefault()
+        if (pathname !== href) {
             animatePageOut(href, router)
         }
     }
 
-    return(
-        <Link onClick={handleClick} className="project-link" href={href}>
-
-        </Link>
+    return (
+        <a onClick={handleClick} className="project-link" href={href} />
     )
 }
 

@@ -34,7 +34,7 @@ export default function Hero() {
         stagger: 0.05,
         ease: "InOutQuart",
         duration: 1.5,
-      }
+      },
     );
 
     // Animación de las palabras de .split-smalls
@@ -48,7 +48,7 @@ export default function Hero() {
         stagger: 0.1,
         ease: "InOutQuart",
         duration: 1,
-      }
+      },
     );
 
     // ANIMACIONES PARA ESCRITORIO (min-width: 751px)
@@ -65,7 +65,7 @@ export default function Hero() {
           ease: "InOutQuart",
           duration: 1.5,
           delay: 0.5,
-        }
+        },
       );
 
       gsap.fromTo(
@@ -83,7 +83,7 @@ export default function Hero() {
             end: "bottom bottom",
             scrub: true,
           },
-        }
+        },
       );
 
       gsap.to(".title-hero", {
@@ -105,7 +105,7 @@ export default function Hero() {
       let tl = gsap.timeline();
 
       tl.to(".title-hero", {
-        x: "-10%", // Se mueve ligeramente en scroll
+        x: "-10%",
         scrollTrigger: {
           trigger: ".title-hero-span",
           start: "top bottom",
@@ -124,7 +124,7 @@ export default function Hero() {
         },
       });
 
-      return () => tl.kill(); // Limpiar animaciones al desmontar
+      return () => tl.kill();
     });
 
     return () => mm.revert(); // Revertir todas las animaciones cuando el componente se desmonte
@@ -149,7 +149,7 @@ export default function Hero() {
       </h1>
       <div className="hero-info">
         <p className="info-element split-smalls">Diseñadora Gráfica</p>
-        <p className="info-element split-smalls">Portfolio ®2025</p>
+        <p className="info-element split-smalls">Portfolio ®2026</p>
       </div>
     </section>
   );

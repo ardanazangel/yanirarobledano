@@ -12,12 +12,11 @@ export default function LayoutClient({ children }) {
   const pathname = usePathname(); // Detectar ruta actual
 
   useEffect(() => {
-    // Inicializa Lenis (scroll suave)
-    const lenis = new Lenis({});
+    if (window.matchMedia('(max-width: 750px)').matches) return;
 
+    const lenis = new Lenis({});
     lenisRef.current = lenis;
 
-    // Función de actualización de Lenis
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -25,21 +24,33 @@ export default function LayoutClient({ children }) {
     requestAnimationFrame(raf);
 
     return () => {
-      lenis.destroy(); // Limpia Lenis al desmontar el componente
+      lenis.destroy();
     };
   }, []);
 
   useEffect(() => {
-    // Cuando cambia la ruta, refresca ScrollTrigger y reinicia el scroll
-    if (lenisRef.current) {
-      lenisRef.current.stop()
-      lenisRef.current.scrollTo(0, { immediate: true })
-      setTimeout(() => {
-        lenisRef.current.start()
-        ScrollTrigger.refresh()
-      }, 100);
-    }
-  }, [pathname]); // Escucha los cambios en la ruta
+    window.scrollTo(0, 0);
+  }, []);
 
-  return <>{children}</>; // Renderiza el contenido
+  useEffect(() => {
+    const container = document.getElementById("container");
+    if (container) {
+      container.classList.remove("page-out");
+      container.style.animation = "none";
+      container.offsetHeight; // reflow
+      container.style.animation = "";
+    }
+    if (lenisRef.current) {
+      lenisRef.current.stop();
+      lenisRef.current.scrollTo(0, { immediate: true });
+      setTimeout(() => {
+        lenisRef.current.start();
+        ScrollTrigger.refresh();
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
+
+  return <div id="container">{children}</div>;
 }

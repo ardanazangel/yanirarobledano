@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { CustomEase } from "gsap/all";
 import Image from "next/image";
+import projectsData from "@/app/data/projects.json";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -17,33 +18,12 @@ gsap.registerPlugin(CustomEase);
 CustomEase.create("InOutQuart", "0.770, 0.000, 0.175, 1.000");
 
 export default function ProjectsSection() {
-  // Datos dinámicos de los proyectos
-  const projects = [
-    {
-      title: "Madamma Butterfly",
-      tags: ["Branding", "Packaging"],
-      imgUrl: '/imgs/madamma-butterfly/bodegon-buterfly.webp',
-      link: "/madamma-butterfly",
-    },
-    {
-      title: "Consejito de la Yaya",
-      tags: ["Branding", "Publicidad", "Redes Sociales"],
-      imgUrl: "/imgs/consejito-de-la-yaya/foto_mupi.webp",
-      link: "/consejito-de-la-yaya",
-    },
-    {
-      title: "Vda. de Manuel Redondo",
-      tags: ["Packaging", "Diseño"],
-      imgUrl: "/imgs/manuel-redondo/logo.webp",
-      link: "/manuel-redondo",
-    },
-    {
-      title: "Suppies",
-      tags: ["Packaging", "Diseño"],
-      imgUrl: "/imgs/suppies/botes-tumbados.webp",
-      link: "/suppies",
-    },
-  ];
+  const projects = projectsData.map((p) => ({
+    title: p.title.replace("\n", " "),
+    tags: p.tags,
+    imgUrl: p.listImg,
+    link: `/proyectos/${p.slug}`,
+  }));
 
   useEffect(() => {
     gsap.to(".projects-title", {

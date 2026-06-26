@@ -1,13 +1,15 @@
-const BackgroundVideo = ({ videoId }) => {
+const BackgroundVideo = ({ src }) => {
     return (
       <div className="video-container">
-        <iframe
-          src={`https://player.vimeo.com/video/${videoId}?autoplay=1&loop=1&background=1`}
+        <video
+          src={src}
+          autoPlay
+          loop
+          muted
+          playsInline
           width="100%"
           height="100%"
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-        ></iframe>
+        />
         <style jsx>{`
           .video-container {
             overflow: hidden;
@@ -16,13 +18,11 @@ const BackgroundVideo = ({ videoId }) => {
             position: relative;
             aspect-ratio:3/4;
           }
-          iframe {
+          video {
             width: 100%;
             height: 100%;
             object-fit: cover;
             pointer-events: none;
-            aspect-ratio:4/3;
-            transform:scale(1.1)
           }
         `}</style>
       </div>
@@ -30,4 +30,3 @@ const BackgroundVideo = ({ videoId }) => {
   };
   
   export default BackgroundVideo;
-  

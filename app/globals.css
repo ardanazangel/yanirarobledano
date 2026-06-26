@@ -1,6 +1,27 @@
 :root {
     --background: #fafafa;
     --foreground: #0d0d0d;
+
+    /* font sizes */
+    --fs-body: 0.83vw;
+    --fs-nav: 1.25vw;
+    --fs-h4: 1.46vw;
+    --fs-h3: 3.33vw;
+    --fs-h2: 9.79vw;
+    --fs-hero: 15vw;
+
+    /* letter spacing */
+    --ls-h2: -0.5vw;
+    --ls-h3: -0.1vw;
+    --ls-hero: -0.75vw;
+
+    /* spacing */
+    --sp-xs: 1.25vw;
+    --sp-sm: 2vw;
+    --sp-md: 2.5vw;
+    --sp-lg: 5vw;
+    --sp-xl: 15vw;
+    --img-hero-mobile: 65vw;
 }
 
 ::-webkit-scrollbar {
@@ -15,31 +36,6 @@ html {
 /* Para Internet Explorer y Edge antiguo */
 body {
     -ms-overflow-style: none;
-}
-
-@font-face {
-    font-family: "Relais";
-    src: url("../public/fonts/RelaisDisplay-Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Relais Light";
-    src: url("../public/fonts/RelaisDisplay-Light.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Relais Light Italic";
-    src: url("../public/fonts/RelaisDisplay-LightItalic.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Area";
-    src: url(../public/fonts/AreaNormal-Regular.woff2) format("woff2");
-}
-
-@font-face {
-    font-family: "Area Bold";
-    src: url(../public/fonts/AreaNormal-Bold.woff2) format("woff2");
 }
 
 * {
@@ -77,12 +73,12 @@ html {
 }
 
 .big-spacer {
-    height: 15vh;
+    height: 10vw;
 }
 
 p {
-    font-family: "Area";
-    font-size: 0.83vw;
+    font-family: var(--font-area);
+    font-size: var(--fs-body);
     line-height: 1.5em;
     font-weight: 400;
 }
@@ -95,49 +91,70 @@ p {
 }
 
 .bold {
-    font-family: "Area Bold";
+    font-family: var(--font-area);
 }
 
 h2 {
-    font-family: "Relais Light";
-    font-size: 9.79vw;
+    font-family: var(--font-relais);
+    font-size: var(--fs-h2);
     font-weight: 400;
     line-height: 0.9em;
-    letter-spacing: -0.5vw;
+    letter-spacing: var(--ls-h2);
 }
 
 h3 {
-    font-family: "Relais Light";
-    font-size: 3.33vw;
+    font-family: var(--font-relais);
+    font-size: var(--fs-h3);
     font-weight: 400;
     line-height: 0.9em;
-    letter-spacing: -0.1vw;
+    letter-spacing: var(--ls-h3);
 }
 
 h4 {
-    font-family: "Area";
-    font-size: 1.46vw;
+    font-family: var(--font-area);
+    font-size: var(--fs-h4);
     line-height: 1.4em;
     font-weight: 400;
     text-wrap: balance;
 }
 
 .italic {
-    font-family: "Relais Light Italic";
+    font-family: var(--font-relais);
+    font-style: italic;
+    font-weight: 300;
 }
 
 .total-wrapper {
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding-left: var(--sp-md);
+    padding-right: var(--sp-md);
 }
 
 #container {
-    opacity: 0;
     background-color: var(--background);
-    padding-bottom: 5vw;
+    padding-bottom: var(--sp-lg);
     filter: drop-shadow(0 32px 64px rgba(0, 0, 0, 0.05));
     position: relative;
     z-index: 1;
+    animation: page-in 0.8s ease forwards;
+}
+
+#container.page-out {
+    animation: page-out 0.6s ease forwards;
+}
+
+@keyframes page-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes page-out {
+    to {
+        opacity: 0;
+    }
 }
 
 button {
@@ -145,10 +162,10 @@ button {
 }
 
 .nav-buttons {
-    font-family: "Area";
+    font-family: var(--font-area);
     border: 0px;
     background-color: transparent;
-    font-size: 1.25vw;
+    font-size: var(--fs-nav);
     cursor: pointer;
 }
 
@@ -173,21 +190,20 @@ button {
     align-items: center;
     justify-content: end;
     flex-direction: column;
-    padding-top: 20vw;
+    padding-top: var(--sp-xl);
 }
 
 .inner-project-title {
-    font-family: "Relais Light";
+    font-family: var(--font-relais);
     font-weight: 400;
     text-align: center;
-    font-size: 9.79vw;
-
+    font-size: var(--fs-h2);
     line-height: 0.9em;
-    letter-spacing: -0.5vw;
+    letter-spacing: var(--ls-h2);
 }
 
 .inner-project-tags {
-    padding: 5vw;
+    padding: var(--sp-lg);
     width: 75%;
     display: flex;
 }
@@ -210,9 +226,9 @@ button {
 .inner-project-description {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25vw;
-    padding-top: 2.5vw;
-    padding-bottom: 5vw;
+    gap: var(--sp-xs);
+    padding-top: var(--sp-md);
+    padding-bottom: var(--sp-lg);
 }
 
 .credits {
@@ -223,25 +239,25 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-right: 2.5vw;
+    margin-right: var(--sp-md);
 }
 
 .inner-project-grid {
     display: grid;
     width: 100%;
-    padding-bottom: 1.25vw;
+    padding-bottom: var(--sp-xs);
 }
 
 .one-columns {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1.25vw;
+    gap: var(--sp-xs);
 }
 
 .two-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25vw;
+    gap: var(--sp-xs);
 }
 
 .one-columns img {
@@ -255,7 +271,7 @@ button {
 @media (min-width: 1600) {
     .inner-project-info {
         min-height: 70vh;
-        gap: 2vw;
+        gap: var(--sp-sm);
     }
 
     .inner-project-title {
@@ -263,14 +279,14 @@ button {
     }
 
     .inner-project-description {
-        padding: 4vw 20vw 6vw 20vw;
+        padding: 4vw var(--sp-xl) 6vw var(--sp-xl);
     }
 }
 
 @media (max-width: 900px) {
     .inner-project-info {
         min-height: 60vh;
-        gap: 2.5vw;
+        gap: var(--sp-md);
     }
 
     .inner-project-description {
@@ -313,5 +329,35 @@ button {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
+    }
+}
+.inner-project-description-content {
+    h4 {
+        margin-bottom: var(--sp-xs);
+    }
+}
+
+@media (max-width: 750px) {
+    :root {
+        --fs-body: 3.5vw;
+        --fs-nav: 4.5vw;
+        --fs-h4: 4.5vw;
+        --fs-h3: 6vw;
+        --fs-h2: 15vw;
+        --fs-hero: 15vw;
+        --ls-h2: -0.5vw;
+        --ls-h3: -0.1vw;
+        --ls-hero: -0.75vw;
+        --sp-xs: 3.5vw;
+        --sp-sm: 3.5vw;
+        --sp-md: 3.5vw;
+        --sp-lg: 7.5vw;
+        --sp-xl: 20vw;
+    }
+    h3 {
+        text-wrap: balance;
+    }
+    .inner-project-title {
+        flex-direction: column;
     }
 }

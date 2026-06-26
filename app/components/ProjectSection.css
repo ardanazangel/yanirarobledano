@@ -77,7 +77,7 @@
     align-items: center;
     padding-top: clamp(3rem, 2.235rem + 3.137vw, 6rem);
     padding-bottom:clamp(3rem, 2.235rem + 3.137vw, 6rem);
-    gap: 2vw;
+    gap: var(--sp-sm);
   }
   
   .project-wrapper{

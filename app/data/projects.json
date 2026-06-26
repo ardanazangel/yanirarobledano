@@ -1,0 +1,348 @@
+[
+  {
+    "slug": "consejito-de-la-yaya",
+    "title": "Consejito de\nla Yaya",
+    "tags": ["Branding", "Publicidad", "Redes Sociales"],
+    "meta": {
+      "cliente": "Proyecto Final",
+      "lugar": "Pamplona",
+      "año": "2024"
+    },
+    "heroImage": {
+      "src": "/imgs/consejito-de-la-yaya/posters.webp",
+      "alt": "Carteles de la campaña Consejito de la Yaya"
+    },
+    "credits": [
+      {
+        "label": "Diseño",
+        "name": "Yanira Robledano",
+        "href": "https://www.instagram.com/robledano_/"
+      },
+      { "label": "Tutorizado", "name": "Oier Irisarri", "href": "#" },
+      { "label": "", "name": "Nerea Simón", "href": "#" }
+    ],
+    "descriptionH4": "Este proyecto está dirigido a la Generación Z y a la denominada \"Generación de Cristal\", dos grupos influenciados por la digitalización, que ha transformado sus hábitos de comunicación y sus formas de relacionarse.",
+    "descriptionP": "La campaña se articula en torno al claim \"Consejito de la Yaya\", un concepto que utiliza la figura entrañable de una abuela como símbolo de confianza, tradición y sabiduría. Con un tono irónico, reflexivo y juvenil, la abuela ofrece consejos a los jóvenes desde una perspectiva cercana, conectando emocionalmente con el público objetivo. Esta propuesta no solo busca generar conciencia sobre los retos de la era digital, sino también invitar a estos jóvenes a la reflexión mediante un enfoque creativo que combina humor y valores.",
+    "grids": [
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "video",
+            "src": "/imgs/consejito-de-la-yaya/compressed_reel-mensajes.mp4"
+          },
+          {
+            "type": "image",
+            "src": "/imgs/consejito-de-la-yaya/movil3.webp",
+            "alt": "Mockup móvil campaña Consejito de la Yaya"
+          }
+        ]
+      },
+      {
+        "columns": "one-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/consejito-de-la-yaya/foto_mupi.webp",
+            "alt": "Mupi publicitario Consejito de la Yaya",
+            "style": { "filter": "brightness(1.1)" }
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "video",
+            "src": "/imgs/consejito-de-la-yaya/compressed_reel-carteles-comprimido.mp4",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          },
+          {
+            "type": "video",
+            "src": "/imgs/consejito-de-la-yaya/compressed_reel_recuerdos.mp4",
+            "wrapperStyle": { "position": "relative", "aspectRatio": "3/4" }
+          }
+        ]
+      }
+    ],
+    "listImg": "/imgs/consejito-de-la-yaya/foto_mupi.webp"
+  },
+  {
+    "slug": "vina-lanciano",
+    "title": "Viña\nLanciano",
+    "tags": ["Packaging"],
+    "meta": {
+      "cliente": "Proyecto Ficticio",
+      "lugar": "Logroño",
+      "año": "2025"
+    },
+    "heroImage": {
+      "src": "/imgs/vina-lanciano/vina_6.webp",
+      "alt": "Packaging Viña Lanciano"
+    },
+    "credits": [
+      {
+        "label": "Diseño y Packaging",
+        "name": "Yanira Robledano",
+        "href": "https://www.instagram.com/robledano_/"
+      }
+    ],
+    "descriptionH4": "Este proyecto consiste en la creación de un sistema de packaging para una colaboración entre Bodegas LAN y el Festival Concéntrico. El concepto del diseño se inspira en la circularidad del ciclo natural de la uva, estableciendo un paralelismo con la instalación interactiva del evento, donde los participantes crean una pieza de cerámica, la utilizan y finalmente la devuelven a la tierra.",
+    "descriptionP": "Esta idea se traslada a la etiqueta mediante fotografías realizadas con la técnica artesanal de la cianotipia y una composición tipográfica dinámica inspirada en la identidad gráfica de Concéntrico.\n\nEl sistema de envases incluye diferentes formatos de botella y un Bag in Box, adaptados a su uso durante el evento. Además, el diseño integra la información técnica y reglamentaria mediante un sistema de etiquetas superpuestas en distintos papeles, manteniendo coherencia con la identidad visual del festival y apostando por soluciones sostenibles y funcionales.\n\nAl tratarse de un evento, se optó por emplear la técnica de la cianotipia como parte del proceso gráfico de las etiquetas. Esta técnica fotográfica artesanal consiste en aplicar una solución fotosensible sobre un soporte y exponerla a la luz solar junto a elementos naturales o negativos, generando imágenes en característicos tonos azules tras su revelado con agua. Su carácter manual permite una producción ilimitada durante el Festival Concéntrico 2025, adaptándose al ritmo del evento y posibilitando la creación de múltiples piezas únicas para estas botellas de Bodegas LAN.",
+    "grids": [
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/vina-lanciano/vina_5.webp",
+            "alt": "Viña Lanciano packaging 2"
+          },
+          {
+            "type": "image",
+            "src": "/imgs/vina-lanciano/vina_3.webp",
+            "alt": "Viña Lanciano packaging 3"
+          }
+        ]
+      },
+      {
+        "columns": "one-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/vina-lanciano/vina_8.webp",
+            "alt": "Viña Lanciano packaging 4"
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/vina-lanciano/vina_4.webp",
+            "alt": "Viña Lanciano packaging 5",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          },
+          {
+            "type": "image",
+            "src": "/imgs/vina-lanciano/vina_2.webp",
+            "alt": "Viña Lanciano packaging 6",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          }
+        ]
+      }
+    ],
+    "listImg": "/imgs/vina-lanciano/vina_3.webp"
+  },
+  {
+    "slug": "manuel-redondo",
+    "title": "Vda. de Manuel\nRedondo",
+    "tags": ["Packaging", "Diseño"],
+    "meta": {
+      "cliente": "Académico",
+      "lugar": "Logroño",
+      "año": "2024"
+    },
+    "heroImage": {
+      "src": "/imgs/manuel-redondo/textura.webp",
+      "alt": "Textura del empaque de Vda. de Manuel Redondo"
+    },
+    "credits": [
+      {
+        "label": "Diseño y Packaging",
+        "name": "Yanira Robledano",
+        "href": "https://www.instagram.com/robledano_/"
+      }
+    ],
+    "descriptionH4": "Desde 1870, Legítimos Mazapanes Vda. de Manuel Redondo elabora mazapanes artesanales en Soto en Cameros, La Rioja. Con ingredientes seleccionados y métodos tradicionales, la marca refleja su compromiso con la calidad, la historia y la identidad regional.",
+    "descriptionP": "Se identificó que la marca presentaba limitaciones en su diseño original, dificultando su implementación en las aplicaciones requeridas para este proyecto. Ante esta situación, se optó por un rediseño de su identidad visual. El rediseño modernizó una marca centenaria, capturando su tradición y artesanía en una identidad renovada que conecta con el consumidor actual. La nueva imagen combina elegancia, calidad y funcionalidad.\n\nEl packaging se diseñó para transmitir la esencia artesanal de la marca, ofreciendo una experiencia sensorial completa. Se incorporaron texturas y materiales sostenibles como la piel de almendra o la cáscara de plátano. Este diseño refuerza el compromiso con la artesanía y la sostenibilidad, elevando la experiencia del consumidor.\n\nEn un esfuerzo por ser sostenibles, se reutiliza la piel de almendra, un subproducto del proceso de producción, como material para el packaging. Esto no solo reduce el desperdicio, sino que también refuerza el compromiso de la marca con la economía circular y el respeto al medio ambiente.",
+    "grids": [
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/manuel-redondo/bolsa-mazapanes.webp",
+            "alt": "Bolsa y caja de mazapanes Vda. de Manuel Redondo"
+          },
+          {
+            "type": "image",
+            "src": "/imgs/manuel-redondo/dos-cajas.webp",
+            "alt": "Dos cajas de mazapanes Vda. de Manuel Redondo"
+          }
+        ]
+      },
+      {
+        "columns": "one-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/manuel-redondo/foto-papel.webp",
+            "alt": "Detalle del papel del empaque Vda. de Manuel Redondo",
+            "style": { "filter": "brightness(1.1)" }
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/manuel-redondo/mazapanes-cerca.webp",
+            "alt": "Mazapanes en primer plano",
+            "style": { "filter": "brightness(1.1)" },
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          },
+          {
+            "type": "image",
+            "src": "/imgs/manuel-redondo/mazapanes.webp",
+            "alt": "Mazapanes en empaque",
+            "style": { "filter": "brightness(.95)" },
+            "wrapperStyle": { "position": "relative", "aspectRatio": "3/4" }
+          }
+        ]
+      }
+    ],
+    "listImg": "/imgs/manuel-redondo/logo.webp"
+  },
+  {
+    "slug": "chico-matcha",
+    "title": "Chico\nMatcha",
+    "tags": ["Branding", "Packaging"],
+    "meta": {
+      "cliente": "Proyecto Final de Máster de Packaging",
+      "lugar": "Logroño",
+      "año": "2025"
+    },
+    "heroImage": {
+      "src": "/imgs/chico-matcha/matcha_2.webp",
+      "alt": "Chico Matcha packaging"
+    },
+    "credits": [
+      {
+        "label": "Diseño y Packaging",
+        "name": "Yanira Robledano",
+        "href": "https://www.instagram.com/robledano_/"
+      },
+      { "label": "Tutorizado", "name": "Gracia de Prado Heras", "href": "#" }
+    ],
+    "descriptionH4": "Este proyecto de packaging integral se desarrolla bajo el concepto de \"lo pequeño como esencia\", presentando el matcha como un concentrado natural que invita al consumidor a crear su propio ritual de bienestar. Bajo el naming CHICO MATCHA, la marca propone una identidad cercana, contemporánea y funcional dirigida a un público joven y urbano que busca alternativas saludables al café.",
+    "descriptionP": "La propuesta incluye el desarrollo del universo gráfico de la marca y su aplicación en una gama de envases primarios y secundarios adaptados a distintos contextos de consumo, como in situ, on the go y retail. El sistema visual se apoya en ilustraciones orgánicas que explican de forma sencilla el proceso de elaboración del matcha, reforzando la narrativa de marca desde la educación visual y la conexión emocional, y dando lugar a una propuesta coherente, accesible y diferenciadora dentro del mercado actual.\n\nUno de los envases, el té matcha preparado es una propuesta que se centra en un packaging diferenciador inspirado formalmente en el chawan, el cuenco japonés tradicional utilizado para preparar matcha, cuyo perfil característico ha sido reinterpretado y adaptado en un formato de concentrado líquido de matcha, pensado especialmente para consumidores que no están familiarizados con su preparación tradicional. Este envase facilita la incorporación del matcha a la rutina diaria, permitiendo crear un ritual propio de forma accesible, práctica y sensorial.",
+    "grids": [
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_5.webp",
+            "alt": "Chico Matcha 2"
+          },
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_3.webp",
+            "alt": "Chico Matcha 3"
+          }
+        ]
+      },
+
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_4.webp",
+            "alt": "Chico Matcha 4",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          },
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_1.webp",
+            "alt": "Chico Matcha 5",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          }
+        ]
+      },
+      {
+        "columns": "one-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_6.webp",
+            "alt": "Chico Matcha 6"
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "video",
+            "src": "/imgs/chico-matcha/video_3D.mov",
+            "alt": "Chico Matcha 7"
+          },
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_8.webp",
+            "alt": "Chico Matcha 8"
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_9.webp",
+            "alt": "Chico Matcha 9",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          },
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_10.webp",
+            "alt": "Chico Matcha 10",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          }
+        ]
+      },
+      {
+        "columns": "one-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_13.webp",
+            "alt": "Chico Matcha 6"
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_12.webp",
+            "alt": "Chico Matcha 12"
+          },
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_11.webp",
+            "alt": "Chico Matcha 11"
+          }
+        ]
+      },
+      {
+        "columns": "two-columns",
+        "items": [
+          { "type": "video", "src": "/imgs/chico-matcha/envase_video.mp4" },
+          {
+            "type": "image",
+            "src": "/imgs/chico-matcha/matcha_14.webp",
+            "alt": "Chico Matcha 14",
+            "wrapperStyle": { "aspectRatio": "3/4" }
+          }
+        ]
+      }
+    ],
+    "listImg": "/imgs/chico-matcha/matcha_1.webp"
+  }
+]
