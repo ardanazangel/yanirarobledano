@@ -90,6 +90,7 @@ span .letter {
 
 .img-banner {
     scale: 1.25;
+    filter: brightness(0.9);
 }
 
 .hero-mobile-tracker {

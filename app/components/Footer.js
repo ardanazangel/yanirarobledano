@@ -55,11 +55,6 @@ export default function Footer() {
                 Yanira Robledano ®2026
               </a>
             </p>
-            <p>
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                CV
-              </a>
-            </p>
           </div>
         </div>
       </div>

@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,12 +26,14 @@ export default function ImageSection() {
     <>
       <div className="banner-image">
         <div className="img">
-          <Image
+          <video
             className="img-banner"
-            src="/imgs/madamma-butterfly/cartel_opera.webp" // Fixed src path
-            width={1920}
-            height={1080}
-            alt="Banner image"
+            src="/video_portfolio.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-label="Portfolio image sequence"
           />
         </div>
       </div>
